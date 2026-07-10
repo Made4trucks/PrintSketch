@@ -1,0 +1,87 @@
+# PRINT VALIDATION CHECKLIST
+Version: 1.0
+
+Purpose:
+Final checklist before sending artwork to 3D printing.
+
+Printing method:
+White circular base first.
+Black artwork printed on top.
+
+This means floating black elements are allowed,
+because they are supported by the white base.
+
+---
+
+## 1. Base
+
+□ White base included  
+□ Base thickness: 2–3 mm  
+□ Circular shape correct  
+□ Outer border clean  
+
+---
+
+## 2. Black Artwork
+
+□ Black artwork sits on top of the white base  
+□ No unwanted background  
+□ Black shapes are clean  
+□ No excessive black masses  
+
+---
+
+## 3. Line Thickness
+
+□ Main lines are strong enough  
+□ Thin details are not fragile  
+□ Minimum visible line: 0.6 mm  
+□ Important lines will survive slicing  
+
+---
+
+## 4. Text
+
+□ Main brand readable  
+□ Company name readable  
+□ License plate readable if important  
+□ Tiny decorative text removed or simplified  
+
+---
+
+## 5. Lights
+
+□ Round lights simplified  
+□ No tiny reflector patterns  
+□ No thin spokes inside lamps  
+□ Rectangular headlights simplified  
+□ Light identity preserved  
+
+---
+
+## 6. Grilles and Mesh
+
+□ Dense mesh simplified  
+□ No extremely tiny openings  
+□ Grille identity preserved  
+□ Bullbar/guard printable  
+
+---
+
+## 7. Visual Check
+
+□ Truck recognizable in 2 seconds  
+□ Looks like customer’s truck  
+□ Cabin is main focus  
+□ Looks premium  
+□ I would print this  
+
+---
+
+## Decision
+
+□ APPROVED FOR TEST PRINT  
+□ NEEDS CLEANUP  
+□ REGENERATE  
+
+Notes:

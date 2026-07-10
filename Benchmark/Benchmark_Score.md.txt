@@ -1,0 +1,113 @@
+# PrintSketch Benchmark
+
+## Version Tested
+
+Prompt Version:
+
+Date:
+
+---
+
+# Test 001
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 002
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 003
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 004
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 005
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 006
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 007
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 008
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 009
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+# Test 010
+
+Truck:
+
+Score:
+
+Notes:
+
+---
+
+Average Score:
+
+Overall Notes:

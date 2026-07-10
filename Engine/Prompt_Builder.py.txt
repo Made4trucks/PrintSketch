@@ -1,0 +1,22 @@
+from pathlib import Path
+
+ENGINE_ORDER = [
+    "00_Mission.md",
+    "01_General_Style.md",
+    "02_Composition.md",
+    "03_Truck_Identity.md",
+    "04_Print_Rules.md",
+    "05_Style_DNA.md",
+    "06_Negative_Prompt.md",
+]
+
+def build_engine(engine_folder):
+    parts = []
+
+    for filename in ENGINE_ORDER:
+        path = Path(engine_folder) / filename
+
+        if path.exists():
+            parts.append(path.read_text(encoding="utf-8").strip())
+
+    return "\n\n".join(parts)

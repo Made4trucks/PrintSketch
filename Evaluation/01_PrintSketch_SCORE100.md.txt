@@ -1,0 +1,103 @@
+# PrintSketch SCORE 100
+
+Prompt Version:
+
+Engine Version:
+
+Truck:
+
+Date:
+
+---
+
+## 1. Truck Identity (10)
+
+Czy od razu wiadomo, że to TEN samochód?
+
+Score:
+
+---
+
+## 2. Cabin Accuracy (10)
+
+Czy kabina jest wiernie odwzorowana?
+
+Score:
+
+---
+
+## 3. Accessories (10)
+
+Czy dodatki właściciela zostały zachowane?
+
+Score:
+
+---
+
+## 4. Composition (10)
+
+Czy kompozycja wygląda premium?
+
+Score:
+
+---
+
+## 5. White Space (10)
+
+Czy projekt jest lekki?
+
+Score:
+
+---
+
+## 6. Windshield (10)
+
+Czy szyba wygląda poprawnie?
+
+Score:
+
+---
+
+## 7. Printability (10)
+
+Czy nadaje się do druku?
+
+Score:
+
+---
+
+## 8. Readability (10)
+
+Czy logo i napisy są czytelne?
+
+Score:
+
+---
+
+## 9. Premium Look (10)
+
+Czy wygląda jak produkt premium?
+
+Score:
+
+---
+
+## 10. Would You Sell It? (10)
+
+Czy bez poprawek sprzedałbyś klientowi?
+
+Score:
+
+---
+
+TOTAL:
+
+/100
+
+Decision:
+
+□ PASS
+
+□ FAIL
+
+Notes:

@@ -1,0 +1,121 @@
+# PRINTSKETCH GOLDEN RULES
+Version: 1.0
+
+These rules define the philosophy of PrintSketch.
+
+Every future prompt, engine update, application feature and design decision must follow these principles.
+
+Breaking a Golden Rule requires a conscious decision and documented justification.
+
+---
+
+# 1. Identity Before Beauty
+
+The truck must always be immediately recognizable as the customer's own vehicle.
+
+Recognition is always more important than artistic interpretation.
+
+---
+
+# 2. Print Before Perfection
+
+Optimize every artwork for the final physical 3D print, not for the digital preview.
+
+If a detail looks good on screen but prints poorly, simplify it.
+
+---
+
+# 3. White Space Is Premium
+
+White space is an active design element.
+
+Do not fill empty areas without purpose.
+
+A clean design always looks more premium.
+
+---
+
+# 4. Every Black Shape Must Have A Purpose
+
+Black areas exist only to improve:
+
+- recognition
+- readability
+- printability
+- structural strength
+
+Never use black only for decoration.
+
+---
+
+# 5. Preserve Character, Simplify Detail
+
+When a detail cannot be reproduced reliably,
+preserve the character instead of the exact geometry.
+
+Never lose the identity of the truck.
+
+---
+
+# 6. Never Invent
+
+Never invent:
+
+- truck parts
+- accessories
+- logos
+- company names
+- text
+- decorations
+
+Everything must originate from the uploaded photo.
+
+---
+
+# 7. The Cabin Is The Hero
+
+The cabin is always the main subject.
+
+Everything else exists only to support it.
+
+---
+
+# 8. Readability Wins
+
+Readable details are more valuable than perfectly copied but unreadable details.
+
+If necessary:
+
+simplify.
+
+Never create unreadable micro-details.
+
+---
+
+# 9. Structural Printability
+
+Every line should improve the physical object.
+
+Avoid:
+
+- floating islands
+- fragile parts
+- extremely thin details
+
+The artwork must print successfully on a standard 0.4 mm nozzle.
+
+---
+
+# 10. Would You Proudly Sell It?
+
+Before accepting the artwork ask:
+
+Would I print this?
+
+Would I proudly sell it?
+
+Would I proudly hang it on my own wall?
+
+If the answer is not YES,
+
+the artwork is not finished.
