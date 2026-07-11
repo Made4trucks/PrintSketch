@@ -25,6 +25,8 @@ print_size_select = None
 style_select = None
 identity_elements_input = None
 checklist_checkboxes = {}
+checklist_progress_label = None
+checklist_status_label = None
 app_status = None
 
 
@@ -81,7 +83,31 @@ def handle_analyze() -> None:
 
     app_status.set_text("🔎 Image analyzed")
 
+def update_checklist_progress() -> None:
+    completed = sum(
+        1
+        for checkbox in checklist_checkboxes.values()
+        if checkbox.value
+    )
 
+    total = len(SVG_CHECKLIST)
+
+    checklist_progress_label.set_text(
+        f"Progress: {completed} / {total}"
+    )
+
+    if completed == total:
+        checklist_status_label.set_text(
+            "🟢 Status: Ready for SVG Production"
+        )
+    elif completed >= total // 2:
+        checklist_status_label.set_text(
+            "🟡 Status: Review Required"
+        )
+    else:
+        checklist_status_label.set_text(
+            "🔴 Status: Incomplete"
+        )
 def handle_build_prompt() -> None:
     prompt = build_prompt()
 
@@ -215,8 +241,17 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                     "text-sm text-gray-500"
                 )
 
+                checklist_progress_label = ui.label(
+                    f"Progress: 0 / {len(SVG_CHECKLIST)}"
+                ).classes(
+                    "font-semibold"
+                )
+
                 for item in SVG_CHECKLIST:
-                    checklist_checkboxes[item] = ui.checkbox(item)
+                    checklist_checkboxes[item] = ui.checkbox(
+                        item,
+                        on_change=lambda event: update_checklist_progress(),
+                    )
 
             with ui.card().classes("w-full"):
                 ui.label("Image Analysis").classes(
