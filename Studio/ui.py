@@ -13,6 +13,8 @@ from svg_checklist import SVG_CHECKLIST
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 UPLOAD_FOLDER = PROJECT_ROOT / "Results" / "uploads"
 UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
+PROMPT_FOLDER = PROJECT_ROOT / "Results" / "prompts"
+PROMPT_FOLDER.mkdir(parents=True, exist_ok=True)
 
 uploaded_image_path: Path | None = None
 
@@ -142,6 +144,8 @@ def handle_build_prompt() -> None:
     final_prompt = f"{project_header}\n{prompt}"
 
     prompt_output.set_value(final_prompt)
+    global last_generated_prompt
+    last_generated_prompt = final_prompt
 
     ui.notify(
         "Prompt assembled successfully.",
