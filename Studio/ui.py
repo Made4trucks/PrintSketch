@@ -121,12 +121,22 @@ def handle_build_prompt() -> None:
         else "No additional identity elements specified."
     )
 
+    checklist_lines = []
+
+    for item, checkbox in checklist_checkboxes.items():
+        symbol = "✓" if checkbox.value else "✗"
+        checklist_lines.append(f"{symbol} {item}")
+
+    checklist_text = "\n".join(checklist_lines)
+
     project_header = (
         f"PROJECT NAME: {project_name}\n"
         f"PRINT SIZE: {print_size}\n"
         f"STYLE: {style}\n"
         f"IMPORTANT IDENTITY ELEMENTS:\n"
-        f"{identity_elements}\n"
+        f"{identity_elements}\n\n"
+        f"SVG PRESERVATION CHECKLIST:\n"
+        f"{checklist_text}\n"
     )
 
     final_prompt = f"{project_header}\n{prompt}"
