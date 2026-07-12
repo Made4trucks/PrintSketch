@@ -8,6 +8,7 @@ from PIL import Image
 from image_analyzer import analyze_image
 from prompt_builder import build_prompt
 from svg_checklist import SVG_CHECKLIST
+from export import export_prompt
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -111,6 +112,8 @@ def update_checklist_progress() -> None:
             "🔴 Status: Incomplete"
         )
 def handle_build_prompt() -> None:
+    global last_generated_prompt
+
     prompt = build_prompt()
 
     project_name = project_name_input.value or "Untitled Project"
@@ -144,7 +147,6 @@ def handle_build_prompt() -> None:
     final_prompt = f"{project_header}\n{prompt}"
 
     prompt_output.set_value(final_prompt)
-    global last_generated_prompt
     last_generated_prompt = final_prompt
 
     ui.notify(
@@ -153,6 +155,30 @@ def handle_build_prompt() -> None:
     )
 
     app_status.set_text("🛠️ Prompt assembled")
+
+
+def handle_export_prompt() -> None:
+    if not last_generated_prompt:
+        ui.notify(
+            "Build the prompt first.",
+            type="warning",
+        )
+        return
+
+    project_name = project_name_input.value or "Untitled Project"
+
+    exported_file = export_prompt(
+        project_name=project_name,
+        prompt=last_generated_prompt,
+        output_folder=PROMPT_FOLDER,
+    )
+
+    ui.notify(
+        f"Prompt exported: {exported_file.name}",
+        type="positive",
+    )
+
+    app_status.set_text("💾 Prompt exported")
 
 
 ui.page_title("PrintSketch Studio")
@@ -288,20 +314,25 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                 ui.label("Prompt Builder").classes(
                     "text-xl font-semibold"
                 )
+            ui.button(
+                "Build Prompt",
+                on_click=handle_build_prompt,
+                icon="build",
+            ).classes("w-full")
 
-                ui.button(
-                    "Build Prompt",
-                    on_click=handle_build_prompt,
-                    icon="build",
-                ).classes("w-full")
+            ui.button(
+                "Export Prompt",
+                on_click=handle_export_prompt,
+                icon="save",
+            ).classes("w-full")
 
-                prompt_output = ui.textarea(
-                    label="Assembled prompt"
-                ).props(
-                    "readonly"
-                ).classes(
-                    "w-full h-64"
-                )
+            prompt_output = ui.textarea(
+                label="Assembled prompt"
+            ).props(
+                "readonly"
+            ).classes(
+                "w-full h-64"
+            )
 
 
 with ui.footer(fixed=True).classes(
@@ -319,7 +350,8 @@ with ui.footer(fixed=True).classes(
 
 ui.run(
     host="0.0.0.0",
-    port=8080,
+    port=8081,
     reload=False,
     title="PrintSketch Studio",
+    show=False,
 )
