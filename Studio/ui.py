@@ -1,14 +1,16 @@
 
 from io import BytesIO
 from pathlib import Path
-
 from nicegui import events, ui
 from PIL import Image
-
 from image_analyzer import analyze_image
+from truck_identity import build_truck_identity
+from identity_preservation import build_identity_preservation
+from prompt_optimizer import calculate_prompt_quality, optimize_prompt
 from prompt_builder import build_prompt
 from svg_checklist import SVG_CHECKLIST
 from export import export_prompt
+
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -19,7 +21,12 @@ PROMPT_FOLDER.mkdir(parents=True, exist_ok=True)
 
 uploaded_image_path: Path | None = None
 
+last_generated_prompt = ""
+last_image_analysis = ""
+
 preview = None
+generated_preview = None
+generated_preview_status = None
 status_label = None
 analysis_output = None
 prompt_output = None
@@ -55,9 +62,29 @@ async def handle_upload(event: events.UploadEventArguments) -> None:
     )
 
     app_status.set_text("📷 Image uploaded")
+async def handle_generated_preview_upload(
+    event: events.UploadEventArguments,
+) -> None:
+    image_bytes = await event.file.read()
 
+    image = Image.open(BytesIO(image_bytes))
+    generated_preview.set_source(image)
+
+    generated_preview_status.set_text(
+        f"Loaded preview: {event.file.name} | "
+        f"{image.width} × {image.height}px"
+    )
+
+    ui.notify(
+        "Generated preview uploaded successfully.",
+        type="positive",
+    )
+
+    app_status.set_text("🖼️ Generated preview loaded")
 
 def handle_analyze() -> None:
+    global last_image_analysis
+
     if uploaded_image_path is None:
         ui.notify(
             "Upload an image first.",
@@ -67,7 +94,7 @@ def handle_analyze() -> None:
 
     data = analyze_image(str(uploaded_image_path))
 
-    analysis_output.set_value(
+    last_image_analysis = (
         f"Filename: {data['filename']}\n"
         f"Resolution: {data['width']} × {data['height']} px\n"
         f"Orientation: {data['orientation']}\n"
@@ -78,6 +105,8 @@ def handle_analyze() -> None:
         f"Format: {data['format']}\n"
         f"Color mode: {data['mode']}"
     )
+
+    analysis_output.set_value(last_image_analysis)
 
     ui.notify(
         "Image analysis completed.",
@@ -126,33 +155,84 @@ def handle_build_prompt() -> None:
         else "No additional identity elements specified."
     )
 
+    company_identity = [
+        "Company logo",
+        "Company name",
+        "Fleet number",
+        "Custom decals",
+        "Model badges",
+    ]
+
+    truck_identity = [
+        "Cab shape",
+        "Roof type",
+        "Sleeper cab",
+        "Sun visor",
+        "Side skirts",
+        "Grille",
+        "Headlights",
+        "Bullbar",
+        "Axle configuration",
+        "Fuel tanks",
+        "Roof lights",
+        "Air horns",
+        "Mirrors",
+        "Exhaust stacks",
+        "Beacon lights",
+    ]
+
+    identity_preservation_text = build_identity_preservation(
+        company_identity=company_identity,
+        truck_identity=truck_identity,
+        additional_notes=identity_elements,
+    )
+
     checklist_lines = []
 
     for item, checkbox in checklist_checkboxes.items():
-        symbol = "✓" if checkbox.value else "✗"
+        symbol = "✓" if checkbox.value else "X"
         checklist_lines.append(f"{symbol} {item}")
 
     checklist_text = "\n".join(checklist_lines)
 
+    image_analysis_text = (
+        last_image_analysis
+        if last_image_analysis
+        else "Image analysis has not been performed."
+    )
+
     project_header = (
         f"PROJECT NAME: {project_name}\n"
         f"PRINT SIZE: {print_size}\n"
-        f"STYLE: {style}\n"
-        f"IMPORTANT IDENTITY ELEMENTS:\n"
-        f"{identity_elements}\n\n"
+        f"STYLE: {style}\n\n"
+        f"{identity_preservation_text}\n\n"
+        f"IMAGE ANALYSIS:\n"
+        f"{image_analysis_text}\n\n"
         f"SVG PRESERVATION CHECKLIST:\n"
         f"{checklist_text}\n"
     )
 
-    final_prompt = f"{project_header}\n{prompt}"
+    raw_prompt = f"{project_header}\n{prompt}"
+
+    optimization_result = optimize_prompt(raw_prompt)
+
+    final_prompt = optimization_result["prompt"]
+    quality_result = calculate_prompt_quality(final_prompt)
 
     prompt_output.set_value(final_prompt)
-    last_generated_prompt = final_prompt
-
     ui.notify(
-        "Prompt assembled successfully.",
-        type="positive",
-    )
+    (
+        f"Prompt quality: {quality_result['score']}/100 "
+        f"— {quality_result['rating']}. "
+        f"Duplicates removed: "
+        f"{optimization_result['duplicates_removed']}"
+    ),
+    type="positive",
+)
+    last_generated_prompt = final_prompt
+    
+
+    
 
     app_status.set_text("🛠️ Prompt assembled")
 
@@ -228,7 +308,35 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                     "w-full max-h-[520px] object-contain "
                     "bg-gray-100 rounded"
                 )
+            with ui.card().classes("w-full"):
+                ui.label("Generated Preview").classes(
+                    "text-xl font-semibold"
+                )
 
+                ui.label(
+                    "Upload an artwork generated from the exported prompt."
+                ).classes(
+                    "text-sm text-gray-500"
+                )
+
+                ui.upload(
+                    label="Upload generated preview",
+                    on_upload=handle_generated_preview_upload,
+                    auto_upload=True,
+                ).props(
+                    'accept=".jpg,.jpeg,.png,.webp"'
+                ).classes("w-full")
+
+                generated_preview_status = ui.label(
+                    "No generated preview uploaded."
+                ).classes(
+                    "text-sm text-gray-500"
+                )
+
+                generated_preview = ui.image().classes(
+                    "w-full max-h-[520px] object-contain "
+                    "bg-gray-100 rounded"
+                )
         with ui.column().classes("w-full lg:w-1/2 gap-6"):
             with ui.card().classes("w-full"):
                 ui.label("Project Settings").classes(

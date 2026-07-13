@@ -1,0 +1,612 @@
+PROJECT NAME: RenaultTest01
+PRINT SIZE: 200 mm
+STYLE: Classic
+IMPORTANT IDENTITY ELEMENTS:
+No additional identity elements specified.
+
+IMAGE ANALYSIS:
+Filename: renault_t.jpg
+Resolution: 903 × 907 px
+Orientation: portrait
+Megapixels: 0.82
+Quality Score: 40/100
+Photo Status: POOR
+Recommendation: BETTER PHOTO REQUIRED
+Format: JPEG
+Color mode: RGB
+
+SVG PRESERVATION CHECKLIST:
+✗ Cab shape
+✗ Windows
+✗ Front grill
+✗ Headlights
+✗ Mirrors
+✗ Wheel layout
+✗ Number of axles
+✗ Fuel tanks
+✗ Exhaust stacks
+✗ Company markings
+✗ Accessories
+✗ Overall proportions
+
+
+================ PRINTSKETCH ENGINE ================
+
+# MISSION
+
+PrintSketch does not create truck illustrations.
+
+PrintSketch recreates the customer's own truck as a premium piece of printable wall art.
+
+Every generated artwork must preserve the identity of the real vehicle shown in the uploaded photo.
+
+The owner should immediately recognize their own truck.
+
+The final artwork is not a photograph.
+
+The final artwork is not an AI illustration.
+
+The final artwork is a professionally designed product created specifically for FDM 3D printing.
+
+Every design decision must support one or more of these goals:
+
+- preserve truck identity
+- improve printability
+- create a premium appearance
+- simplify without losing character
+
+If a design decision does not support these goals,
+
+it should not be made.
+
+---
+
+GENERAL STYLE
+
+Create a premium black-and-white industrial wall decoration designed specifically for FDM 3D printing.
+
+The final artwork must look like a finished decorative product, not a photograph.
+
+Use only solid black and white.
+
+No grayscale.
+
+No gradients.
+
+No shadows.
+
+No textures.
+
+No realistic rendering.
+
+No sketch effect.
+
+White space is an intentional part of the design.
+
+The final artwork should feel clean, elegant and premium.
+
+The artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
+
+---
+
+GENERAL STYLE
+
+Create a premium black-and-white industrial wall decoration designed specifically for FDM 3D printing.
+
+The final artwork must look like a finished decorative product, not a photograph.
+
+Use only solid black and white.
+
+No grayscale.
+
+No gradients.
+
+No shadows.
+
+No textures.
+
+No realistic rendering.
+
+No sketch effect.
+
+White space is an intentional part of the design.
+
+The final artwork should feel clean, elegant and premium.
+
+The artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
+
+If the trailer is removed, extend the rear chassis only enough to preserve the visual balance of the truck. Never allow the remaining chassis or trailer section to occupy more than approximately 20% of the total truck length inside the composition.
+
+## Perspective
+
+Preserve the original viewing angle.
+
+Never rotate the truck.
+
+Never convert a front three-quarter view into a side view.
+
+Never exaggerate perspective.
+
+Never change the apparent camera height.
+
+Preserve the natural proportions created by the original camera position.
+
+---
+
+TRUCK IDENTITY
+
+The generated artwork must represent the exact truck shown in the uploaded photo.
+
+Never transform the truck into another model or another brand.
+
+Preserve the characteristic cabin shape.
+
+Preserve the identity of the grille.
+
+Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
+
+Preserve the identity of the headlights.
+
+Preserve the mirrors.
+
+Preserve the wheels whenever visible.
+
+Preserve the roof accessories.
+
+Preserve the sun visor.
+
+Preserve owner-installed accessories whenever possible.
+
+Company decals should remain recognizable.
+
+Brand name should remain readable.
+
+Model designation should remain readable.
+
+License plate should remain recognizable whenever possible.
+
+Never invent text.
+
+Never replace text with different words.
+
+If text cannot be reproduced accurately, simplify it without changing its meaning.
+
+Never add new company logos, stickers or decorations.
+
+When simplifying the truck, preserve the elements that make this specific truck unique.
+
+The owner should immediately recognize their own vehicle.
+
+Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+
+---
+
+# PRINT RULES
+
+## General
+
+The artwork is designed specifically for FDM 3D printing.
+
+Reference printer: Bambu Lab P1S.
+
+Reference nozzle: 0.4 mm.
+
+Design for the physical object first, not for the digital preview.
+
+The final artwork should be immediately ready for slicing.
+
+Prioritize structural strength, readability and clean printable geometry over photographic accuracy.
+
+---
+
+## Line Quality
+
+Minimum printable line width: 0.6 mm.
+
+Maintain consistent line thickness throughout the design.
+
+Use bold, continuous lines.
+
+Avoid extremely thin lines.
+
+Every line should have a structural purpose.
+
+---
+
+## Structural Integrity
+
+Avoid floating elements.
+
+Avoid isolated islands.
+
+Avoid fragile connections.
+
+Every important detail must connect naturally to the main design.
+
+The final artwork should print cleanly without manual editing.
+
+---
+
+## Small Details
+
+If a detail is too small to print reliably, simplify it while preserving the character of the truck.
+
+Simplify very small details before removing important visual identity.
+
+Prefer fewer strong shapes instead of many tiny details.
+
+Never create unreadable micro-details.
+
+---
+
+## Text
+
+Only preserve text that contributes to the identity of the truck.
+
+If small decorative text cannot be reproduced with reliable readability at the target print size, simplify or remove it instead of creating unreadable tiny details.
+
+---
+
+## Round Lights
+
+Round lights and auxiliary light units must be simplified into bold printable geometry.
+
+Do not reproduce:
+
+- internal reflector patterns
+- concentric rings
+- thin spokes
+- star patterns
+- micro-details inside the lamp
+
+Preserve only the outer shape and visual identity of the light.
+
+---
+
+## Multiple Auxiliary Lights
+
+If multiple identical auxiliary lights are mounted together, preserve the overall arrangement and spacing.
+
+Do not reproduce every internal reflector detail.
+
+Each light should remain simple, bold and printable.
+
+---
+
+## Meshes & Protective Grilles
+
+Large mesh patterns, protective guards and grille inserts should preserve their overall appearance but be simplified into bold printable geometry.
+
+Avoid tiny openings and dense mesh structures.
+
+---
+
+## Final Validation
+
+Before accepting the artwork ask:
+
+Would this successfully print with a standard 0.4 mm nozzle?
+
+If not,
+
+simplify.
+
+---
+
+# STYLE DNA
+
+The artwork should feel light, elegant and premium.
+
+White space is an intentional design element.
+
+Approximately 70–80% of the artwork should remain white.
+
+Use black only where it improves recognition of the truck.
+
+Avoid large solid black areas.
+
+The cabin should remain visually clean.
+
+The windshield should stay mostly white.
+
+Use smooth flowing curves.
+
+Create strong visual hierarchy.
+
+The truck should immediately attract the viewer's attention.
+
+The artwork should resemble premium laser-cut industrial wall art.
+
+The final design should look expensive.
+
+The final design should look balanced.
+
+The final design should be suitable for display in an office, garage or home.
+
+Every element should contribute to a premium industrial appearance.
+
+---
+
+## Visual Hierarchy
+
+The viewer must recognize the truck within the first second.
+
+Create a clear visual hierarchy.
+
+Priority order:
+
+1. Cabin silhouette
+2. Grille
+3. Headlights
+4. Windshield
+5. Owner-specific accessories
+6. Company name
+7. Secondary details
+
+If necessary, simplify lower-priority details to preserve higher-priority elements.
+
+The viewer's eye should always be drawn to the cabin first.
+
+Large visual shapes are more important than small decorative details.
+
+The overall silhouette of the truck must always remain immediately recognizable.
+
+---
+
+NEGATIVE PROMPT
+
+Do not change the truck brand.
+
+Do not change the truck model.
+
+Do not change the body proportions.
+
+Do not invent accessories.
+
+Do not remove owner-installed accessories unless they are completely invisible.
+
+Do not add company logos, stickers or decorative graphics.
+
+Do not invent text.
+
+Do not replace readable text with different text.
+
+Do not add background elements.
+
+No road.
+
+No buildings.
+
+No trees.
+
+No sky.
+
+No people.
+
+No animals.
+
+No reflections.
+
+No dirt.
+
+No smoke.
+
+No weather effects.
+
+No textures.
+
+No gradients.
+
+No shadows.
+
+No grayscale.
+
+No photorealism.
+
+No sketch effect.
+
+No cartoon style.
+
+No random decorative patterns.
+
+Do not create floating elements.
+
+Do not create fragile printable details.
+
+Do not create large solid black masses.
+
+Do not turn the windshield into a solid black shape.
+
+Do not crop important parts of the truck.
+
+Never reduce the truck to a simple silhouette.
+
+---
+
+# DECISION PRIORITY
+
+When two design goals conflict, always follow this priority order.
+
+1. Preserve truck identity.
+
+2. Preserve printability.
+
+3. Preserve overall composition.
+
+4. Preserve readability.
+
+5. Preserve premium appearance.
+
+6. Preserve secondary decorative details.
+
+If a lower-priority element prevents a higher-priority goal,
+simplify or remove the lower-priority element.
+
+Never sacrifice truck identity for decorative complexity.
+
+Never sacrifice printability for photographic accuracy.
+
+Always optimize for the final physical product.
+
+================ PROMPT TEMPLATE ===================
+
+Transform the uploaded European truck photo into a premium black-and-white circular wall decoration designed specifically for FDM 3D printing.
+
+GENERAL STYLE
+
+Create a clean, elegant, premium industrial design.
+
+The result must look like a professionally designed wall plaque, not a photo.
+
+Use only solid black and white.
+
+No grayscale.
+
+No shadows.
+
+No gradients.
+
+No sketch effect.
+
+No realistic rendering.
+
+White space is an intentional design element.
+
+COMPOSITION
+
+Keep the original camera angle and perspective.
+
+Place the truck inside a perfect circular frame.
+
+The truck should occupy approximately 90% of the circle.
+
+Remove the complete background.
+
+TRUCK IDENTITY
+
+Preserve the exact truck brand and model.
+
+Keep the characteristic shape of the cab.
+
+Keep the identity of the grille.
+
+Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
+
+Keep mirrors and windshield.
+
+Do not redesign the truck.
+
+Preserve owner-installed accessories whenever possible.
+
+Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+
+Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+
+TEXT
+
+Make all important text larger and cleaner.
+
+Brand name must be clearly readable.
+
+Model designation must be clearly readable.
+
+Company name should be large and balanced.
+
+License plate should remain readable but simple.
+
+Never invent or replace visible text.
+If text cannot be reproduced accurately, simplify it but never change it.
+
+DETAIL LEVEL
+
+Design for a 0.4 mm nozzle.
+
+Minimum printable line width about 0.6 mm.
+
+Avoid extremely thin lines.
+
+Avoid floating elements.
+
+Every important element should connect naturally with the design.
+
+HEADLIGHTS
+
+Simplify internal headlight details.
+
+Keep the characteristic shape.
+
+Avoid tiny circles and very small decorative lines.
+
+GRILLE
+
+Keep the grille recognizable.
+
+Reduce unnecessary small openings.
+
+Prefer larger bold shapes.
+
+PRINT STYLE
+
+Use black only where it improves readability after 3D printing.
+
+Clean white separation lines.
+
+Balanced contrast.
+
+Smooth curves.
+
+Vector-like appearance.
+
+The design must look excellent after 3D printing, not only on a screen.
+
+NEGATIVE PROMPT
+
+No background.
+
+No scenery.
+
+No people.
+
+No buildings.
+
+No road.
+
+No trees.
+
+No reflections.
+
+No textures.
+
+No dirt.
+
+No random decorative patterns.
+
+No fragile details.
+
+No additional logos or graphics outside the truck.
+
+STYLE DNA
+
+The final artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
+
+The artwork should contain approximately 70–80% white space and 20–30% black elements.
+
+Use black only to define the truck shape.
+
+Avoid large solid black areas.
+
+The windshield must remain mostly white with only thin black outlines, window frame and wipers.
+
+The final artwork should feel clean, balanced and suitable for premium FDM 3D printing.
+
+The truck itself must always be the main visual element.
+
+TRUCK PRIORITY
+
+The truck cab is the hero of the artwork.
+
+If a trailer is present, completely remove it or reduce it to a minimal rear chassis.
+
+Never allow the trailer to dominate the composition.
+
+The cab should occupy approximately 70% of the truck itself.
