@@ -8,8 +8,10 @@ from truck_identity import build_truck_identity
 from identity_preservation import build_identity_preservation
 from prompt_optimizer import calculate_prompt_quality, optimize_prompt
 from prompt_builder import build_prompt
+from ai_preview import generate_ai_preview
 from svg_checklist import SVG_CHECKLIST
 from export import export_prompt
+
 
 
 

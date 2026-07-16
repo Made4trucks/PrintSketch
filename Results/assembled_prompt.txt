@@ -1,5 +1,4 @@
-
-================ PRINTSKETCH ENGINE ================
+================ PRINTSKETCH MISSION ================
 
 # MISSION
 
@@ -28,7 +27,7 @@ If a design decision does not support these goals,
 
 it should not be made.
 
----
+================ DESIGN RULES =======================
 
 GENERAL STYLE
 
@@ -55,210 +54,6 @@ White space is an intentional part of the design.
 The final artwork should feel clean, elegant and premium.
 
 The artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
-
----
-
-GENERAL STYLE
-
-Create a premium black-and-white industrial wall decoration designed specifically for FDM 3D printing.
-
-The final artwork must look like a finished decorative product, not a photograph.
-
-Use only solid black and white.
-
-No grayscale.
-
-No gradients.
-
-No shadows.
-
-No textures.
-
-No realistic rendering.
-
-No sketch effect.
-
-White space is an intentional part of the design.
-
-The final artwork should feel clean, elegant and premium.
-
-The artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
-
-If the trailer is removed, extend the rear chassis only enough to preserve the visual balance of the truck. Never allow the remaining chassis or trailer section to occupy more than approximately 20% of the total truck length inside the composition.
-
-## Perspective
-
-Preserve the original viewing angle.
-
-Never rotate the truck.
-
-Never convert a front three-quarter view into a side view.
-
-Never exaggerate perspective.
-
-Never change the apparent camera height.
-
-Preserve the natural proportions created by the original camera position.
-
----
-
-TRUCK IDENTITY
-
-The generated artwork must represent the exact truck shown in the uploaded photo.
-
-Never transform the truck into another model or another brand.
-
-Preserve the characteristic cabin shape.
-
-Preserve the identity of the grille.
-
-Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
-
-Preserve the identity of the headlights.
-
-Preserve the mirrors.
-
-Preserve the wheels whenever visible.
-
-Preserve the roof accessories.
-
-Preserve the sun visor.
-
-Preserve owner-installed accessories whenever possible.
-
-Company decals should remain recognizable.
-
-Brand name should remain readable.
-
-Model designation should remain readable.
-
-License plate should remain recognizable whenever possible.
-
-Never invent text.
-
-Never replace text with different words.
-
-If text cannot be reproduced accurately, simplify it without changing its meaning.
-
-Never add new company logos, stickers or decorations.
-
-When simplifying the truck, preserve the elements that make this specific truck unique.
-
-The owner should immediately recognize their own vehicle.
-
-Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
-
----
-
-# PRINT RULES
-
-## General
-
-The artwork is designed specifically for FDM 3D printing.
-
-Reference printer: Bambu Lab P1S.
-
-Reference nozzle: 0.4 mm.
-
-Design for the physical object first, not for the digital preview.
-
-The final artwork should be immediately ready for slicing.
-
-Prioritize structural strength, readability and clean printable geometry over photographic accuracy.
-
----
-
-## Line Quality
-
-Minimum printable line width: 0.6 mm.
-
-Maintain consistent line thickness throughout the design.
-
-Use bold, continuous lines.
-
-Avoid extremely thin lines.
-
-Every line should have a structural purpose.
-
----
-
-## Structural Integrity
-
-Avoid floating elements.
-
-Avoid isolated islands.
-
-Avoid fragile connections.
-
-Every important detail must connect naturally to the main design.
-
-The final artwork should print cleanly without manual editing.
-
----
-
-## Small Details
-
-If a detail is too small to print reliably, simplify it while preserving the character of the truck.
-
-Simplify very small details before removing important visual identity.
-
-Prefer fewer strong shapes instead of many tiny details.
-
-Never create unreadable micro-details.
-
----
-
-## Text
-
-Only preserve text that contributes to the identity of the truck.
-
-If small decorative text cannot be reproduced with reliable readability at the target print size, simplify or remove it instead of creating unreadable tiny details.
-
----
-
-## Round Lights
-
-Round lights and auxiliary light units must be simplified into bold printable geometry.
-
-Do not reproduce:
-
-- internal reflector patterns
-- concentric rings
-- thin spokes
-- star patterns
-- micro-details inside the lamp
-
-Preserve only the outer shape and visual identity of the light.
-
----
-
-## Multiple Auxiliary Lights
-
-If multiple identical auxiliary lights are mounted together, preserve the overall arrangement and spacing.
-
-Do not reproduce every internal reflector detail.
-
-Each light should remain simple, bold and printable.
-
----
-
-## Meshes & Protective Grilles
-
-Large mesh patterns, protective guards and grille inserts should preserve their overall appearance but be simplified into bold printable geometry.
-
-Avoid tiny openings and dense mesh structures.
-
----
-
-## Final Validation
-
-Before accepting the artwork ask:
-
-Would this successfully print with a standard 0.4 mm nozzle?
-
-If not,
-
-simplify.
 
 ---
 
@@ -417,7 +212,256 @@ Never sacrifice printability for photographic accuracy.
 
 Always optimize for the final physical product.
 
-================ PROMPT TEMPLATE ===================
+================ COMPOSITION RULES ==================
+
+# COMPOSITION
+
+Place the truck inside a balanced circular composition.
+
+The truck should remain the main visual element.
+
+Preserve the original framing and natural proportions of the vehicle.
+
+If the trailer is removed, extend the rear chassis only enough to preserve the visual balance of the truck.
+
+Never allow the remaining chassis or trailer section to occupy more than approximately 20% of the total truck length inside the composition.
+
+## Perspective
+
+Preserve the original viewing angle.
+
+Never rotate the truck.
+
+Never convert a front three-quarter view into a side view.
+
+Never exaggerate perspective.
+
+Never change the apparent camera height.
+
+Preserve the natural proportions created by the original camera position.
+
+================ IDENTITY RULES =====================
+
+TRUCK IDENTITY
+
+The generated artwork must represent the exact truck shown in the uploaded photo.
+
+Never transform the truck into another model or another brand.
+
+Preserve the characteristic cabin shape.
+
+Preserve the identity of the grille.
+
+Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
+
+Preserve the identity of the headlights.
+
+Preserve the mirrors.
+
+Preserve the wheels whenever visible.
+
+Preserve the roof accessories.
+
+Preserve the sun visor.
+
+Preserve owner-installed accessories whenever possible.
+
+Company decals should remain recognizable.
+
+Brand name should remain readable.
+
+Model designation should remain readable.
+
+License plate should remain recognizable whenever possible.
+
+Never invent text.
+
+Never replace text with different words.
+
+If text cannot be reproduced accurately, simplify it without changing its meaning.
+
+Never add new company logos, stickers or decorations.
+
+When simplifying the truck, preserve the elements that make this specific truck unique.
+
+The owner should immediately recognize their own vehicle.
+
+Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+
+---
+
+DECISION HIERARCHY
+
+When simplifying the artwork, always preserve elements in the following order of importance.
+
+LEVEL 1 — Truck Identity
+
+Never remove or significantly simplify:
+
+- truck brand
+- truck model
+- cabin shape
+- grille
+- headlights
+- mirrors
+
+LEVEL 2 — Company Identity
+
+Preserve whenever visible:
+
+- company name
+- company logo
+- company graphics
+- visor branding
+
+LEVEL 3 — Owner Signatures
+
+Preserve whenever they remain printable:
+
+- personalized windshield names
+- truck model designation
+- registration plate
+- custom curtains
+- owner-installed accessories
+- unique decorations
+
+LEVEL 4 — Technical Noise
+
+Remove or simplify whenever they reduce printability:
+
+- inspection stickers
+- certification labels
+- warning decals
+- tiny technical markings
+- serial labels
+- other visually insignificant details
+
+================ APPROVED IDENTITY MAP ==============
+
+The information below describes the exact vehicle shown
+in the source photograph.
+
+These manually verified facts override automatic
+interpretation.
+
+Do not mirror, relocate, reinterpret or invent any
+listed identity element.
+
+No approved vehicle-specific identity map was supplied.
+
+================ PRINTABILITY RULES =================
+
+# PRINT RULES
+
+## General
+
+The artwork is designed specifically for FDM 3D printing.
+
+Reference printer: Bambu Lab P1S.
+
+Reference nozzle: 0.4 mm.
+
+Design for the physical object first, not for the digital preview.
+
+The final artwork should be immediately ready for slicing.
+
+Prioritize structural strength, readability and clean printable geometry over photographic accuracy.
+
+---
+
+## Line Quality
+
+Minimum printable line width: 0.6 mm.
+
+Maintain consistent line thickness throughout the design.
+
+Use bold, continuous lines.
+
+Avoid extremely thin lines.
+
+Every line should have a structural purpose.
+
+---
+
+## Structural Integrity
+
+Avoid floating elements.
+
+Avoid isolated islands.
+
+Avoid fragile connections.
+
+Every important detail must connect naturally to the main design.
+
+The final artwork should print cleanly without manual editing.
+
+---
+
+## Small Details
+
+If a detail is too small to print reliably, simplify it while preserving the character of the truck.
+
+Simplify very small details before removing important visual identity.
+
+Prefer fewer strong shapes instead of many tiny details.
+
+Never create unreadable micro-details.
+
+---
+
+## Text
+
+Only preserve text that contributes to the identity of the truck.
+
+If small decorative text cannot be reproduced with reliable readability at the target print size, simplify or remove it instead of creating unreadable tiny details.
+
+---
+
+## Round Lights
+
+Round lights and auxiliary light units must be simplified into bold printable geometry.
+
+Do not reproduce:
+
+- internal reflector patterns
+- concentric rings
+- thin spokes
+- star patterns
+- micro-details inside the lamp
+
+Preserve only the outer shape and visual identity of the light.
+
+---
+
+## Multiple Auxiliary Lights
+
+If multiple identical auxiliary lights are mounted together, preserve the overall arrangement and spacing.
+
+Do not reproduce every internal reflector detail.
+
+Each light should remain simple, bold and printable.
+
+---
+
+## Meshes & Protective Grilles
+
+Large mesh patterns, protective guards and grille inserts should preserve their overall appearance but be simplified into bold printable geometry.
+
+Avoid tiny openings and dense mesh structures.
+
+---
+
+## Final Validation
+
+Before accepting the artwork ask:
+
+Would this successfully print with a standard 0.4 mm nozzle?
+
+If not,
+
+simplify.
+
+================ PROMPT TEMPLATE ====================
 
 Transform the uploaded European truck photo into a premium black-and-white circular wall decoration designed specifically for FDM 3D printing.
 
@@ -469,7 +513,6 @@ Preserve owner-installed accessories whenever possible.
 
 Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
 
-Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
 
 TEXT
 

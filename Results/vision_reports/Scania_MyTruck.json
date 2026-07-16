@@ -1,0 +1,101 @@
+{
+  "vehicle": {
+    "brand": "Scania",
+    "model_designation": "460S",
+    "model_designation_position": "lower right (from viewer's perspective) on the grille/bumper",
+    "cab_type": "high roof sleeper cab (visible from side and front windows and roof shape)",
+    "viewing_angle": "frontal, straight-on",
+    "camera_height": "headlight level (medium height, perpendicular to cab front)"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing directly towards camera",
+    "important_crop_information": "entire front of cab visible, top of cab fully included, bumper to roof visible, all key markings present and readable"
+  },
+  "company_identity": [
+    {
+      "text": "KOOPS",
+      "position": "top of cab above windshield, vertical orientation (reads bottom-to-top from viewer's left to right)",
+      "appearance": "large, bold white letters"
+    },
+    {
+      "text": "SCANIA",
+      "position": "center of grille, vertical orientation (reads bottom-to-top from viewer's left to right)",
+      "appearance": "large, bold white letters"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "57-BXX-2 (license plate)",
+      "position": "center bottom, above bumper",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "1961 badge (circular)",
+      "position": "lower left and lower right edges of grille",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 4,
+        "position": "evenly spaced, centerline above windshield",
+        "arrangement": "horizontal row",
+        "outer_shape": "small amber domes"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 6,
+        "position": "within grille, central area",
+        "arrangement": "vertical pairs, staggered in three rows",
+        "outer_shape": "small amber rectangles"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "main_headlights": {
+      "count": 4,
+      "position": "outermost sections, two per side (both left and right lower corners)",
+      "outer_shape": "rectangular, with clear lenses"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "curved scalloped white curtain (top edge inside windshield)",
+      "Dafje decal, center lower windshield",
+      "stuffed animal/toy, center bottom"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 4,
+    "grille_description": "four wide horizontal silver bars across black grille, slightly recessed, grille honeycomb pattern",
+    "headlight_description": "main headlight units in two stacked rectangular shapes per side, integrated into the cab front on left and right sides",
+    "bumper_description": "dark bumper spanning width, clean design with integrated lower step"
+  },
+  "do_not_move": [
+    "KOOPS top of cab lettering",
+    "SCANIA central grille vertical lettering",
+    "license plate"
+  ],
+  "do_not_invent": [
+    "no trailer contents or rear markings shown",
+    "no additional badges/text not visible in provided image"
+  ],
+  "uncertain_items": [
+    {
+      "text": "Dafje",
+      "position": "center lower windshield",
+      "reason": "Decal legibility close but might be stylized script, probable 'Dafje'."
+    }
+  ]
+}

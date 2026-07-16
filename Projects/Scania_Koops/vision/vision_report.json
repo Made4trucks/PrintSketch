@@ -1,0 +1,107 @@
+{
+  "vehicle": {
+    "brand": "Scania",
+    "model_designation": "460S",
+    "model_designation_position": "front, lower right (from viewer's perspective; below headlight)",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "front view, centered",
+    "camera_height": "eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing directly towards camera, centered",
+    "important_crop_information": "top of cab, bumper, headlights, and license plate fully visible; some pavement and part of adjacent building and greenery in background"
+  },
+  "company_identity": [
+    {
+      "text": "KOOPS",
+      "position": "front of cab, above windshield, horizontal orientation (letters upright when vehicle is upright)",
+      "appearance": "large white uppercase letters"
+    },
+    {
+      "text": "SCANIA",
+      "position": "front grille, vertically centered, horizontal orientation (letters upright when vehicle is upright)",
+      "appearance": "large white uppercase letters, placed vertically along the grille"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "license plate '57-BXX-2'",
+      "position": "front bumper, centered below grille",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "windshield sticker 'Dodge'",
+      "position": "lower center of front windshield, horizontal orientation",
+      "print_importance": "optional"
+    },
+    {
+      "text_or_element": "grille badge with Scania griffin logo",
+      "position": "center top of grille, above 'SCANIA' lettering",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "badge with text '1964'",
+      "position": "on both lower left and lower right sides of grille (from viewer's perspective)",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 4,
+        "position": "along the top edge of the cab, spaced evenly left to right, following the front curve",
+        "arrangement": "horizontal row",
+        "outer_shape": "rectangular/oval"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 6,
+        "position": "integrated into the front grille, two groups of three (left, center, right), vertically aligned within the grille slots",
+        "arrangement": "vertical pairs grouped horizontally",
+        "outer_shape": "small rectangle"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "main_headlights": {
+      "count": 4,
+      "position": "two on each side of the lower front, integrated into the bumper (stacked vertically by pair, left and right sides)",
+      "outer_shape": "rectangular with rounded corners"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "Dodge sticker, blue/white script style, center lower windshield",
+      "stuffed animal/toy on passenger side dashboard",
+      "decorative curtain/border with white scalloped edge and red trim along upper windshield edge"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "black mesh with five wide horizontal silver bars, grille split into several vertical segments with orange lights embedded",
+    "headlight_description": "two-part units each side (left/right); each unit consists of two main lamps in stacked vertical layout, clear lens, integrated with bumper",
+    "bumper_description": "dark color, streamlined design with rectangular license plate holder in center, headlights integrated into far left and right sections"
+  },
+  "do_not_move": [
+    "KOOPS lettering above windshield",
+    "SCANIA logo vertically on grille",
+    "model designation '460S' below right headlight",
+    "license plate centered on bumper",
+    "Scania griffin badge center-top of grille"
+  ],
+  "do_not_invent": [
+    "company details not visible on vehicle",
+    "side/window contents not visible"
+  ],
+  "uncertain_items": []
+}

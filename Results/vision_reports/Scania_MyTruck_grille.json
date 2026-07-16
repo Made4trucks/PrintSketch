@@ -1,0 +1,44 @@
+{
+  "model_designation": {
+    "text": "460S",
+    "side": "viewer_left",
+    "orientation": "horizontal",
+    "position_description": "Lower part of the front grille on the viewer's left side."
+  },
+  "grille_lights": {
+    "count": 6,
+    "arrangement": "distinctive compact pyramid-like arrangement",
+    "row_structure": "three rows of paired lights, preserving the exact spatial layout visible in the source photograph",
+    "outer_shape": "small rectangular lights with rounded corners"
+  },
+  "grille": {
+    "horizontal_bar_count": 4,
+    "mesh_present": true,
+    "description": "Four main horizontal grille levels. Simplify the honeycomb mesh into bold printable openings while preserving the original grille proportions."
+  },
+  "visible_text": [
+    {
+      "text": "SCANIA",
+      "side": "center",
+      "orientation": "horizontal",
+      "position_description": "Large horizontal lettering centered on the upper front grille."
+    },
+    {
+      "text": "460S",
+      "side": "viewer_left",
+      "orientation": "horizontal",
+      "position_description": "Small model designation on the lower grille, on the viewer's left side."
+    }
+  ],
+  "do_not_move": [
+    "460S must remain on the viewer's left side",
+    "SCANIA must remain centered",
+    "the six grille lights must retain their original pyramid-like arrangement"
+  ],
+  "do_not_invent": [
+    "do not add SCANIA lettering to the side of the cab",
+    "do not add additional grille lights",
+    "do not relocate or mirror the 460S designation"
+  ],
+  "uncertain_items": []
+}

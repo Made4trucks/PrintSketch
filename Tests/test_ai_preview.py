@@ -31,7 +31,7 @@ def find_newest_uploaded_image() -> Path:
 
 
 def main() -> None:
-    source_image = find_newest_uploaded_image()
+    source_image = UPLOAD_FOLDER / "Scania_MyTruck.jpg"
     output_image = OUTPUT_FOLDER / "Test06_PrintabilityAdapter.png"
 
     test_prompt = """
