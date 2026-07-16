@@ -5,6 +5,10 @@ from project_context import ProjectContext
 from prompt_builder import build_prompt
 from vision_report import create_vision_report
 from project_status import ProjectStatus
+from vision_stage import VisionStage
+from identity_stage import IdentityStage
+from prompt_stage import PromptStage
+from preview_stage import PreviewStage
 
 
 class ProductionPipeline:
@@ -13,6 +17,13 @@ class ProductionPipeline:
     def __init__(self, project: PrintSketchProject) -> None:
         self.project = project
         self.context: ProjectContext = project.context
+
+        self.stages = [
+        VisionStage(self.context),
+        IdentityStage(self.context),
+        PromptStage(self.context),
+        PreviewStage(self.context),
+    ]
 
     def validate_project(self) -> None:
         """Check whether the project is ready for processing."""
@@ -156,6 +167,13 @@ class ProductionPipeline:
         print("=" * 60)
 
         self.validate_project()
+
+        for stage in self.stages:
+            if stage.is_ready():
+                stage.print_skip()
+                continue
+
+            stage.run()
 
         status = ProjectStatus(self.context)
 

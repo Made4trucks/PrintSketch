@@ -350,66 +350,56 @@ listed identity element.
 {
   "vehicle": {
     "brand": "Scania",
-    "model_designation": "460S",
-    "model_designation_position": "front, lower right (from viewer's perspective; below headlight)",
+    "model_designation": "460 S",
+    "model_designation_position": "lower right (from viewer's perspective) on the front below the headlight",
     "cab_type": "high-roof sleeper cab",
-    "viewing_angle": "front view, centered",
-    "camera_height": "eye-level"
+    "viewing_angle": "full frontal view, level angle",
+    "camera_height": "headlight level"
   },
   "composition": {
-    "tractor_only_or_trailer_visible": "tractor only",
-    "truck_orientation": "facing directly towards camera, centered",
-    "important_crop_information": "top of cab, bumper, headlights, and license plate fully visible; some pavement and part of adjacent building and greenery in background"
+    "tractor_only_or_trailer_visible": "tractor unit only",
+    "truck_orientation": "facing directly toward the viewer, centered in frame",
+    "important_crop_information": "all key front cab identity features fully visible, no major crops; slight ground crop at bumper"
   },
   "company_identity": [
     {
       "text": "KOOPS",
-      "position": "front of cab, above windshield, horizontal orientation (letters upright when vehicle is upright)",
-      "appearance": "large white uppercase letters"
+      "position": "upper cab, horizontal across the cab sun visor",
+      "appearance": "large, bold white uppercase letters"
     },
     {
       "text": "SCANIA",
-      "position": "front grille, vertically centered, horizontal orientation (letters upright when vehicle is upright)",
-      "appearance": "large white uppercase letters, placed vertically along the grille"
+      "position": "center of grille, vertical orientation (letters from top to bottom)",
+      "appearance": "large, bold white uppercase letters"
     }
   ],
   "owner_signatures": [
     {
-      "text_or_element": "license plate '57-BXX-2'",
-      "position": "front bumper, centered below grille",
+      "text_or_element": "57-BXX-2 (license plate)",
+      "position": "center bottom, on the bumper",
       "print_importance": "critical"
     },
     {
-      "text_or_element": "windshield sticker 'Dodge'",
-      "position": "lower center of front windshield, horizontal orientation",
-      "print_importance": "optional"
-    },
-    {
-      "text_or_element": "grille badge with Scania griffin logo",
-      "position": "center top of grille, above 'SCANIA' lettering",
+      "text_or_element": "Dolly",
+      "position": "inside cab, windshield center, blue script with white outline",
       "print_importance": "important"
-    },
-    {
-      "text_or_element": "badge with text '1964'",
-      "position": "on both lower left and lower right sides of grille (from viewer's perspective)",
-      "print_importance": "optional"
     }
   ],
   "lighting_map": {
     "roof_lights": [
       {
         "count": 4,
-        "position": "along the top edge of the cab, spaced evenly left to right, following the front curve",
+        "position": "roofline above windshield",
         "arrangement": "horizontal row",
-        "outer_shape": "rectangular/oval"
+        "outer_shape": "rectangular amber"
       }
     ],
     "grille_lights": [
       {
         "count": 6,
-        "position": "integrated into the front grille, two groups of three (left, center, right), vertically aligned within the grille slots",
-        "arrangement": "vertical pairs grouped horizontally",
-        "outer_shape": "small rectangle"
+        "position": "within black grille, arranged in pairs at three horizontal levels",
+        "arrangement": "symmetrical pairs, three rows",
+        "outer_shape": "rectangular amber"
       }
     ],
     "bumper_lights": [
@@ -422,37 +412,41 @@ listed identity element.
     ],
     "main_headlights": {
       "count": 4,
-      "position": "two on each side of the lower front, integrated into the bumper (stacked vertically by pair, left and right sides)",
-      "outer_shape": "rectangular with rounded corners"
+      "position": "two left, two right (from viewer), integrated at extreme left and right lower front corners",
+      "outer_shape": "rectangular with clear lens"
     }
   },
   "windows": {
     "windshield_contents": [
-      "Dodge sticker, blue/white script style, center lower windshield",
-      "stuffed animal/toy on passenger side dashboard",
-      "decorative curtain/border with white scalloped edge and red trim along upper windshield edge"
+      "scalloped white/cream curtain lining top edge",
+      "\"Dolly\" text (center, blue/white script)",
+      "small stuffed animal/soft toy (right side, from viewer's perspective)",
+      "round sticker or badge with a clock face and the number 30 (right side)",
+      "model truck or similar object (center dashboard behind glass)"
     ],
     "side_window_contents": [],
     "curtains_present": true
   },
   "front_geometry": {
-    "grille_bar_count": 5,
-    "grille_description": "black mesh with five wide horizontal silver bars, grille split into several vertical segments with orange lights embedded",
-    "headlight_description": "two-part units each side (left/right); each unit consists of two main lamps in stacked vertical layout, clear lens, integrated with bumper",
-    "bumper_description": "dark color, streamlined design with rectangular license plate holder in center, headlights integrated into far left and right sections"
+    "grille_bar_count": 4,
+    "grille_description": "Four horizontal silver bars, black honeycomb mesh background, vertical split center",
+    "headlight_description": "Two-part, vertically stacked rectangular units on both left and right sides, smooth clear covers",
+    "bumper_description": "Body colored, integrated with headlight units, includes license plate mounting"
   },
   "do_not_move": [
-    "KOOPS lettering above windshield",
-    "SCANIA logo vertically on grille",
-    "model designation '460S' below right headlight",
-    "license plate centered on bumper",
-    "Scania griffin badge center-top of grille"
+    "KOOPS text on sun visor",
+    "SCANIA text on center grille",
+    "license plate (57-BXX-2)",
+    "460 S model badge"
   ],
   "do_not_invent": [
-    "company details not visible on vehicle",
-    "side/window contents not visible"
+    "trailer details",
+    "side graphic content",
+    "text not visible in the image"
   ],
-  "uncertain_items": []
+  "uncertain_items": [
+    "Badge under passenger headlight (right from viewer): small badge with \"1961\", design unclear in detail"
+  ]
 }
 
 ================ PRINTABILITY RULES =================
