@@ -36,6 +36,7 @@ def generate_ai_preview(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     client = OpenAI()
+    print("Connecting to GPT Image...")
 
     with source_image_path.open("rb") as source_image:
         result = client.images.edit(
@@ -46,6 +47,8 @@ def generate_ai_preview(
             quality="medium",
         )
 
+        print("Image received from OpenAI.")
+
     image_base64 = result.data[0].b64_json
 
     if not image_base64:
@@ -53,5 +56,7 @@ def generate_ai_preview(
 
     image_bytes = base64.b64decode(image_base64)
     output_path.write_bytes(image_bytes)
+
+    print(f"Preview saved: {output_path}")
 
     return output_path

@@ -1,7 +1,7 @@
 
 from io import BytesIO
 from pathlib import Path
-from nicegui import events, ui
+from nicegui import ui, run
 from PIL import Image
 from image_analyzer import analyze_image
 from truck_identity import build_truck_identity
@@ -11,6 +11,10 @@ from prompt_builder import build_prompt
 from ai_preview import generate_ai_preview
 from svg_checklist import SVG_CHECKLIST
 from export import export_prompt
+from project_dashboard import get_project_status
+from dashboard_component import create_dashboard
+from project import PrintSketchProject
+from production_pipeline import ProductionPipeline
 
 
 
@@ -40,15 +44,31 @@ checklist_checkboxes = {}
 checklist_progress_label = None
 checklist_status_label = None
 app_status = None
+dashboard_container = None
+current_project = None
 
 
 async def handle_upload(event: events.UploadEventArguments) -> None:
     global uploaded_image_path
+    global current_project
 
     image_bytes = await event.file.read()
 
     uploaded_image_path = UPLOAD_FOLDER / event.file.name
     uploaded_image_path.write_bytes(image_bytes)
+
+    project_name = (
+        project_name_input.value.strip()
+        if project_name_input.value
+        else uploaded_image_path.stem
+)
+
+    current_project = PrintSketchProject(project_name)
+    current_project.create()
+
+    current_project.import_photo(uploaded_image_path)
+
+    
 
     image = Image.open(BytesIO(image_bytes))
     preview.set_source(image)
@@ -86,8 +106,17 @@ async def handle_generated_preview_upload(
 
 def handle_analyze() -> None:
     global last_image_analysis
+    global current_project
+
+    if current_project is None:
+        ui.notify(
+            "Create or upload a project first.",
+            type="warning",
+        )
+        return
 
     if uploaded_image_path is None:
+        
         ui.notify(
             "Upload an image first.",
             type="warning",
@@ -97,16 +126,29 @@ def handle_analyze() -> None:
     data = analyze_image(str(uploaded_image_path))
 
     last_image_analysis = (
-        f"Filename: {data['filename']}\n"
-        f"Resolution: {data['width']} × {data['height']} px\n"
-        f"Orientation: {data['orientation']}\n"
-        f"Megapixels: {data['megapixels']}\n"
-        f"Quality Score: {data['quality_score']}/100\n"
-        f"Photo Status: {data['photo_status']}\n"
-        f"Recommendation: {data['recommendation']}\n"
-        f"Format: {data['format']}\n"
-        f"Color mode: {data['mode']}"
-    )
+    f"Filename: {data['filename']}\n\n"
+
+    f"IMAGE INFORMATION\n"
+    f"────────────────────────────\n"
+    f"Resolution: {data['width']} × {data['height']} px\n"
+    f"Orientation: {data['orientation']}\n"
+    f"Megapixels: {data['megapixels']}\n"
+    f"Format: {data['format']}\n"
+    f"Color mode: {data['mode']}\n\n"
+
+    f"TECHNICAL QUALITY\n"
+    f"────────────────────────────\n"
+    f"Resolution Score : {data['resolution_score']}/100\n"
+    f"Sharpness        : {data['sharpness_score']}/100 ({data['sharpness_status']})\n"
+    f"Exposure         : {data['exposure_score']}/100 ({data['exposure_status']})\n"
+    f"Contrast         : {data['contrast_score']}/100 ({data['contrast_status']})\n\n"
+
+    f"OVERALL RESULT\n"
+    f"────────────────────────────\n"
+    f"Technical Score : {data['technical_score']}/100\n"
+    f"Photo Status    : {data['photo_status']}\n"
+    f"Recommendation  : {data['recommendation']}"
+)
 
     analysis_output.set_value(last_image_analysis)
 
@@ -116,6 +158,49 @@ def handle_analyze() -> None:
     )
 
     app_status.set_text("🔎 Image analyzed")
+
+def handle_run_pipeline() -> None:
+    global current_project
+
+    if current_project is None:
+        ui.notify(
+            "Upload a truck photo first.",
+            type="warning",
+        )
+        return
+
+    pipeline = ProductionPipeline(current_project)
+    pipeline.run()
+    refresh_dashboard()
+
+    ui.notify(
+        "Production pipeline finished.",
+        type="positive",
+    )
+
+    app_status.set_text("⚙️ Pipeline finished")   
+
+def refresh_dashboard() -> None:
+    global dashboard_container
+    global current_project
+
+    if dashboard_container is None:
+        return
+
+    dashboard_container.clear()
+
+    with dashboard_container:
+        if current_project is None:
+            with ui.card().classes("w-full"):
+                ui.label("Production Dashboard").classes(
+                    "text-xl font-semibold"
+                )
+                ui.label(
+                    "Upload a truck photo to create a project."
+                ).classes("text-sm text-gray-500")
+            return
+
+        create_dashboard(current_project.context)     
 
 def update_checklist_progress() -> None:
     completed = sum(
@@ -340,6 +425,8 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                     "bg-gray-100 rounded"
                 )
         with ui.column().classes("w-full lg:w-1/2 gap-6"):
+
+
             with ui.card().classes("w-full"):
                 ui.label("Project Settings").classes(
                     "text-xl font-semibold"
@@ -414,6 +501,14 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                     icon="search",
                 ).classes("w-full")
 
+                ui.button(
+                    "Run Production Pipeline",
+                    on_click=handle_run_pipeline,
+                    icon="play_arrow",
+                ).classes("w-full")
+
+                dashboard_container = ui.column().classes("w-full")
+
                 analysis_output = ui.textarea(
                     label="Analysis result"
                 ).props(
@@ -456,7 +551,7 @@ with ui.footer(fixed=True).classes(
     app_status = ui.label("🟢 Ready").classes(
         "font-bold"
     )
-
+refresh_dashboard()
 
 ui.run(
     host="0.0.0.0",

@@ -15,6 +15,10 @@ class PipelineStage(ABC):
     def is_ready(self) -> bool:
         """Return True when this stage has already been completed."""
 
+    def validate(self) -> None:
+        """Validate stage output before it is considered ready."""
+        return
+
     @abstractmethod
     def run(self) -> None:
         """Execute this pipeline stage."""

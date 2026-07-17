@@ -26,6 +26,23 @@ class PromptStage(PipelineStage):
     def is_ready(self) -> bool:
         return self.output_path.exists()
 
+    def validate(self) -> None:
+        if not self.output_path.exists():
+            raise FileNotFoundError(
+                f"Production Prompt does not exist: "
+                f"{self.output_path}"
+            )
+
+        prompt = self.output_path.read_text(
+            encoding="utf-8"
+        ).strip()
+
+        if not prompt:
+            raise ValueError(
+                f"Production Prompt is empty: "
+                f"{self.output_path}"
+            )
+
     def run(self) -> None:
         if not self.identity_map_path.exists():
             raise FileNotFoundError(
@@ -35,6 +52,11 @@ class PromptStage(PipelineStage):
 
         self.print_start()
 
+        self.context.prompt_folder.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
         prompt = build_prompt(
             identity_map_path=self.identity_map_path
         )
@@ -43,6 +65,8 @@ class PromptStage(PipelineStage):
             prompt,
             encoding="utf-8",
         )
+
+        self.validate()
 
         self.print_complete()
         print(f"Saved to: {self.output_path}")

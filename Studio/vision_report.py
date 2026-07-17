@@ -39,10 +39,31 @@ Use this exact structure:
     "viewing_angle": "",
     "camera_height": ""
   },
-  "composition": {
+    "composition": {
     "tractor_only_or_trailer_visible": "",
     "truck_orientation": "",
     "important_crop_information": ""
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 0,
+    "cab_fully_visible": false,
+    "front_fully_visible": false,
+    "roof_fully_visible": false,
+    "bumper_fully_visible": false,
+    "left_mirror_visible": false,
+    "right_mirror_visible": false,
+    "grille_clearly_visible": false,
+    "headlights_clearly_visible": false,
+    "brand_text_readable": false,
+    "model_text_readable": false,
+    "company_text_readable": false,
+    "license_plate_readable": false,
+    "perspective_suitability": "excellent|good|acceptable|poor",
+    "crop_quality": "excellent|good|acceptable|poor",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low|medium|high",
+    "identity_visibility": "excellent|good|acceptable|poor"
   },
   "company_identity": [
     {
@@ -88,7 +109,7 @@ Use this exact structure:
     "position": "",
     "outer_shape": ""
   }
-}
+},
   "windows": {
     "windshield_contents": [],
     "side_window_contents": [],
@@ -126,6 +147,23 @@ Rules:
 - For every model badge, provide its exact side from the viewer's perspective.
 - If the position cannot be determined confidently, place it in uncertain_items
   instead of guessing.
+  - Estimate truck_frame_coverage_percent as the approximate percentage of the
+  complete photograph occupied by the visible truck or cab.
+- cab_fully_visible is true only when the complete cab silhouette needed for
+  the artwork is visible.
+- front_fully_visible is true only when the main front geometry is not cropped
+  or blocked.
+- Mark each mirror, roof, bumper, grille and headlight field independently.
+- A text field is readable only when its actual visible wording can be
+  identified confidently. Do not mark it readable based only on its location.
+- Record every object that blocks part of the truck in obstructions.
+- Do not count normal truck accessories as obstructions.
+- perspective_suitability evaluates whether the original angle is useful for
+  producing recognizable circular PrintSketch wall art.
+- crop_quality evaluates whether important parts of the cab are cut off by the
+  photograph boundaries.
+- identity_visibility evaluates whether the brand, model, company markings,
+  grille, lights and owner-installed details can be preserved faithfully.
 """
 
 

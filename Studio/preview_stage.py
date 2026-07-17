@@ -25,6 +25,19 @@ class PreviewStage(PipelineStage):
 
     def is_ready(self) -> bool:
         return self.output_path.exists()
+    
+    def validate(self) -> None:
+        if not self.output_path.exists():
+            raise FileNotFoundError(
+                f"AI Preview does not exist: "
+                f"{self.output_path}"
+        )
+
+        if self.output_path.stat().st_size == 0:
+            raise ValueError(
+                f"AI Preview file is empty: "
+                f"{self.output_path}"
+        )
 
     def run(self) -> None:
         if not self.context.photo.exists():
@@ -71,6 +84,8 @@ class PreviewStage(PipelineStage):
                 "Preview generation finished, but the "
                 f"output file was not created: {self.output_path}"
             )
+        
+        self.validate()
 
         self.print_complete()
         print(f"Saved to: {self.output_path}")

@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
+
 @dataclass(slots=True)
 class ProjectContext:
     """Shared project paths used by every PrintSketch module."""

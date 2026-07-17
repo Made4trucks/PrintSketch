@@ -2,15 +2,16 @@ import json
 from pathlib import Path
 
 from pipeline_stage import PipelineStage
+from printsketch_readiness import create_readiness_report
 
 
-class IdentityStage(PipelineStage):
-    """Prepare an editable approved identity map."""
+class ReadinessStage(PipelineStage):
+    """Calculate PrintSketch production readiness."""
 
-    name = "Identity Review"
+    name = "PrintSketch Readiness"
 
     @property
-    def source_path(self) -> Path:
+    def vision_report_path(self) -> Path:
         return (
             self.context.vision_folder
             / "vision_report.json"
@@ -19,8 +20,8 @@ class IdentityStage(PipelineStage):
     @property
     def output_path(self) -> Path:
         return (
-            self.context.identity_folder
-            / "approved_identity.json"
+            self.context.vision_folder
+            / "readiness_report.json"
         )
 
     def is_ready(self) -> bool:
@@ -29,7 +30,7 @@ class IdentityStage(PipelineStage):
     def validate(self) -> None:
         if not self.output_path.exists():
             raise FileNotFoundError(
-                f"Identity Map does not exist: "
+                f"Readiness Report does not exist: "
                 f"{self.output_path}"
             )
 
@@ -41,42 +42,31 @@ class IdentityStage(PipelineStage):
             )
         except json.JSONDecodeError as error:
             raise ValueError(
-                f"Identity Map contains invalid JSON: "
+                f"Readiness Report contains invalid JSON: "
                 f"{self.output_path}"
             ) from error
 
         if not isinstance(data, dict):
             raise ValueError(
-                f"Identity Map must contain a JSON object: "
+                f"Readiness Report must contain a JSON object: "
                 f"{self.output_path}"
             )
 
     def run(self) -> None:
-        if not self.source_path.exists():
+        if not self.vision_report_path.exists():
             raise FileNotFoundError(
                 f"Vision Report does not exist: "
-                f"{self.source_path}"
+                f"{self.vision_report_path}"
             )
 
         self.print_start()
 
-        self.context.identity_folder.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
-
-        self.output_path.write_text(
-            self.source_path.read_text(
-                encoding="utf-8"
-            ),
-            encoding="utf-8",
+        create_readiness_report(
+            vision_report_path=self.vision_report_path,
+            output_path=self.output_path,
         )
 
         self.validate()
 
         self.print_complete()
         print(f"Saved to: {self.output_path}")
-        print(
-            "Review and correct this file before "
-            "building the production prompt."
-        )

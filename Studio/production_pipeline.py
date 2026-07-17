@@ -6,6 +6,7 @@ from prompt_builder import build_prompt
 from vision_report import create_vision_report
 from project_status import ProjectStatus
 from vision_stage import VisionStage
+from readiness_stage import ReadinessStage
 from identity_stage import IdentityStage
 from prompt_stage import PromptStage
 from preview_stage import PreviewStage
@@ -20,10 +21,11 @@ class ProductionPipeline:
 
         self.stages = [
         VisionStage(self.context),
+        ReadinessStage(self.context),
         IdentityStage(self.context),
         PromptStage(self.context),
         PreviewStage(self.context),
-    ]
+]
 
     def validate_project(self) -> None:
         """Check whether the project is ready for processing."""
@@ -161,6 +163,8 @@ class ProductionPipeline:
         return output_path
 
     def run(self) -> None:
+        """Run all production stages in the correct order."""
+
         print()
         print("=" * 60)
         print("PrintSketch Production Pipeline")
@@ -170,25 +174,11 @@ class ProductionPipeline:
 
         for stage in self.stages:
             if stage.is_ready():
+                stage.validate()
                 stage.print_skip()
                 continue
 
             stage.run()
-
-        status = ProjectStatus(self.context)
-
-        if not status.vision_ready:
-            self.analyze_photo()
-
-        status = ProjectStatus(self.context)
-
-        if not status.identity_ready:
-            self.prepare_identity_map()
-
-        status = ProjectStatus(self.context)
-
-        if not status.prompt_ready:
-            self.build_production_prompt()
 
         status = ProjectStatus(self.context)
 
@@ -198,7 +188,3 @@ class ProductionPipeline:
 
         print()
         print("Pipeline finished.")
-
-        
-    
-    
