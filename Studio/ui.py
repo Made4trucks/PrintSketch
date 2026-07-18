@@ -1,7 +1,7 @@
 
 from io import BytesIO
 from pathlib import Path
-from nicegui import ui, run
+from nicegui import ui, run, events
 from PIL import Image
 from image_analyzer import analyze_image
 from truck_identity import build_truck_identity
@@ -84,25 +84,31 @@ async def handle_upload(event: events.UploadEventArguments) -> None:
     )
 
     app_status.set_text("📷 Image uploaded")
+
+def load_generated_preview(image: Image.Image, status: str) -> None:
+    generated_preview.set_source(image)
+
+    generated_preview_status.set_text(status)
+
+    app_status.set_text("🖼️ Generated preview loaded")
+        
 async def handle_generated_preview_upload(
     event: events.UploadEventArguments,
 ) -> None:
     image_bytes = await event.file.read()
 
     image = Image.open(BytesIO(image_bytes))
-    generated_preview.set_source(image)
 
-    generated_preview_status.set_text(
+    load_generated_preview(
+        image,
         f"Loaded preview: {event.file.name} | "
-        f"{image.width} × {image.height}px"
+        f"{image.width} × {image.height}px",
     )
 
     ui.notify(
         "Generated preview uploaded successfully.",
         type="positive",
     )
-
-    app_status.set_text("🖼️ Generated preview loaded")
 
 def handle_analyze() -> None:
     global last_image_analysis
@@ -158,8 +164,9 @@ def handle_analyze() -> None:
     )
 
     app_status.set_text("🔎 Image analyzed")
+    
 
-def handle_run_pipeline() -> None:
+async def handle_run_pipeline() -> None:
     global current_project
 
     if current_project is None:
@@ -170,7 +177,11 @@ def handle_run_pipeline() -> None:
         return
 
     pipeline = ProductionPipeline(current_project)
-    pipeline.run()
+    await run.io_bound(pipeline.run)
+    
+    preview_path = current_project.preview_folder / "preview_v1.png"
+    generated_preview.set_source(Image.open(preview_path))
+
     refresh_dashboard()
 
     ui.notify(
@@ -385,8 +396,9 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                 ).classes(
                     "text-sm text-gray-500"
                 )
+        with ui.row().classes("w-full gap-4"):
 
-            with ui.card().classes("w-full"):
+            with ui.card().classes("w-1/2"):
                 ui.label("Preview").classes(
                     "text-xl font-semibold"
                 )
@@ -395,7 +407,7 @@ with ui.column().classes("w-full max-w-7xl mx-auto p-6 gap-6"):
                     "w-full max-h-[520px] object-contain "
                     "bg-gray-100 rounded"
                 )
-            with ui.card().classes("w-full"):
+            with ui.card().classes("w-1/2"):
                 ui.label("Generated Preview").classes(
                     "text-xl font-semibold"
                 )

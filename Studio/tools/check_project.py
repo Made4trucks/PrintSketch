@@ -1,5 +1,5 @@
 from pathlib import Path
-from utils import PrintSketchProject
+from project import PrintSketchProject
 
 APP_NAME = "PrintSketch Studio"
 VERSION = "1.0.0"

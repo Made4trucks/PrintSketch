@@ -1,9 +1,5 @@
-from pathlib import Path
-
 from project import PrintSketchProject
 from project_context import ProjectContext
-from prompt_builder import build_prompt
-from vision_report import create_vision_report
 from project_status import ProjectStatus
 from vision_stage import VisionStage
 from readiness_stage import ReadinessStage
@@ -64,103 +60,7 @@ class ProductionPipeline:
         self.print_status()
 
         return self.context
-    def analyze_photo(self) -> Path:
-        """Create and save the project's general Vision Report."""
-
-        self.validate_project()
-
-        output_path = (
-            self.context.vision_folder
-            / "vision_report.json"
-        )
-
-        print()
-        print("Analyzing project photo...")
-        print(f"Source: {self.context.photo}")
-
-        create_vision_report(
-            image_path=self.context.photo,
-            output_path=output_path,
-        )
-
-        print("Vision Report created successfully.")
-        print(f"Saved to: {output_path}")
-
-        return output_path
     
-    def prepare_identity_map(self) -> Path:
-        """Create an editable identity map from the Vision Report."""
-
-        vision_report_path = (
-            self.context.vision_folder
-            / "vision_report.json"
-        )
-
-        if not vision_report_path.exists():
-            raise FileNotFoundError(
-                f"Vision Report does not exist: "
-                f"{vision_report_path}"
-            )
-
-        output_path = (
-            self.context.identity_folder
-            / "approved_identity.json"
-        )
-
-        output_path.write_text(
-            vision_report_path.read_text(
-                encoding="utf-8"
-            ),
-            encoding="utf-8",
-        )
-
-        print()
-        print("Identity Map prepared successfully.")
-        print(f"Saved to: {output_path}")
-        print(
-            "Review and correct this file before "
-            "building the production prompt."
-        )
-
-        return output_path
-    
-    def build_production_prompt(self) -> Path:
-        """Build and save the final production prompt."""
-
-        identity_map_path = (
-            self.context.identity_folder
-            / "approved_identity.json"
-        )
-
-        if not identity_map_path.exists():
-            raise FileNotFoundError(
-                f"Approved Identity Map does not exist: "
-                f"{identity_map_path}"
-            )
-
-        output_path = (
-            self.context.prompt_folder
-            / "assembled_prompt.txt"
-        )
-
-        print()
-        print("Building production prompt...")
-        print(f"Identity Map: {identity_map_path}")
-
-        prompt = build_prompt(
-            identity_map_path=identity_map_path
-        )
-
-        output_path.write_text(
-            prompt,
-            encoding="utf-8",
-        )
-
-        print("Production prompt created successfully.")
-        print(f"Saved to: {output_path}")
-        print(f"Total characters: {len(prompt)}")
-
-        return output_path
 
     def run(self) -> None:
         """Run all production stages in the correct order."""
