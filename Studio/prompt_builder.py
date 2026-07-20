@@ -4,6 +4,10 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ENGINE_FOLDER = PROJECT_ROOT / "Engine"
 PROMPT_FOLDER = PROJECT_ROOT / "Prompts"
+PROMPT_MODULE_FOLDER = (
+    PROMPT_FOLDER
+    / "Prompt_Classic_v1.1_modules"
+)
 
 
 def load_text_file(
@@ -44,6 +48,23 @@ def load_engine_modules(
 
     return "\n\n---\n\n".join(modules)
 
+def load_prompt_modules(
+    filenames: list[str],
+) -> str:
+    """Load and join selected Prompt v1.1 modules."""
+
+    modules: list[str] = []
+
+    for filename in filenames:
+        content = load_text_file(
+            PROMPT_MODULE_FOLDER / filename
+        )
+
+        if content:
+            modules.append(content)
+
+    return "\n\n---\n\n".join(modules)
+
 
 def load_prompt_template() -> str:
     prompt_file = (
@@ -66,6 +87,23 @@ def load_identity_map(
         )
 
     return load_text_file(identity_map_path)
+
+def load_prompt_v11() -> str:
+    """Load Prompt Classic v1.1 assembled from modules."""
+
+    return load_prompt_modules(
+        [
+            "01_General_Style.md",
+            "02_Composition.md",
+            "03_Truck_Identity.md",
+            "04_Text_Rules.md",
+            "05_Printability.md",
+            "06_Simplification.md",
+            "07_Negative_Rules.md",
+            "08_Style_DNA.md",
+            "09_Final_Validation.md",
+        ]
+    )    
 
 
 def build_prompt(
@@ -111,7 +149,7 @@ def build_prompt(
         identity_map_path
     )
 
-    prompt_template = load_prompt_template()
+    prompt_template = load_prompt_v11()
 
     return f"""
 ================ PRINTSKETCH MISSION ================
