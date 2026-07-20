@@ -1,0 +1,898 @@
+================ PRINTSKETCH MISSION ================
+
+# MISSION
+
+PrintSketch does not create truck illustrations.
+
+PrintSketch recreates the customer's own truck as a premium piece of printable wall art.
+
+Every generated artwork must preserve the identity of the real vehicle shown in the uploaded photo.
+
+The owner should immediately recognize their own truck.
+
+The final artwork is not a photograph.
+
+The final artwork is not an AI illustration.
+
+The final artwork is a professionally designed product created specifically for FDM 3D printing.
+
+Every design decision must support one or more of these goals:
+
+- preserve truck identity
+- improve printability
+- create a premium appearance
+- simplify without losing character
+
+If a design decision does not support these goals,
+
+it should not be made.
+
+================ DESIGN RULES =======================
+
+GENERAL STYLE
+
+Create a premium black-and-white industrial wall decoration designed specifically for FDM 3D printing.
+
+The final artwork must look like a finished decorative product, not a photograph.
+
+Use only solid black and white.
+
+No grayscale.
+
+No gradients.
+
+No shadows.
+
+No textures.
+
+No realistic rendering.
+
+No sketch effect.
+
+White space is an intentional part of the design.
+
+The final artwork should feel clean, elegant and premium.
+
+The artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
+
+---
+
+# STYLE DNA
+
+The artwork should feel light, elegant and premium.
+
+White space is an intentional design element.
+
+Approximately 70–80% of the artwork should remain white.
+
+Use black only where it improves recognition of the truck.
+
+Avoid large solid black areas.
+
+The cabin should remain visually clean.
+
+The windshield should stay mostly white.
+
+Use smooth flowing curves.
+
+Create strong visual hierarchy.
+
+The truck should immediately attract the viewer's attention.
+
+The artwork should resemble premium laser-cut industrial wall art.
+
+The final design should look expensive.
+
+The final design should look balanced.
+
+The final design should be suitable for display in an office, garage or home.
+
+Every element should contribute to a premium industrial appearance.
+
+---
+
+## Visual Hierarchy
+
+The viewer must recognize the truck within the first second.
+
+Create a clear visual hierarchy.
+
+Priority order:
+
+1. Cabin silhouette
+2. Grille
+3. Headlights
+4. Windshield
+5. Owner-specific accessories
+6. Company name
+7. Secondary details
+
+If necessary, simplify lower-priority details to preserve higher-priority elements.
+
+The viewer's eye should always be drawn to the cabin first.
+
+Large visual shapes are more important than small decorative details.
+
+The overall silhouette of the truck must always remain immediately recognizable.
+
+---
+
+NEGATIVE PROMPT
+
+Do not change the truck brand.
+
+Do not change the truck model.
+
+Do not change the body proportions.
+
+Do not invent accessories.
+
+Do not remove owner-installed accessories unless they are completely invisible.
+
+Do not add company logos, stickers or decorative graphics.
+
+Do not invent text.
+
+Do not replace readable text with different text.
+
+Do not add background elements.
+
+No road.
+
+No buildings.
+
+No trees.
+
+No sky.
+
+No people.
+
+No animals.
+
+No reflections.
+
+No dirt.
+
+No smoke.
+
+No weather effects.
+
+No textures.
+
+No gradients.
+
+No shadows.
+
+No grayscale.
+
+No photorealism.
+
+No sketch effect.
+
+No cartoon style.
+
+No random decorative patterns.
+
+Do not create floating elements.
+
+Do not create fragile printable details.
+
+Do not create large solid black masses.
+
+Do not turn the windshield into a solid black shape.
+
+Do not crop important parts of the truck.
+
+Never reduce the truck to a simple silhouette.
+
+---
+
+# DECISION PRIORITY
+
+When two design goals conflict, always follow this priority order.
+
+1. Preserve truck identity.
+
+2. Preserve printability.
+
+3. Preserve overall composition.
+
+4. Preserve readability.
+
+5. Preserve premium appearance.
+
+6. Preserve secondary decorative details.
+
+If a lower-priority element prevents a higher-priority goal,
+simplify or remove the lower-priority element.
+
+Never sacrifice truck identity for decorative complexity.
+
+Never sacrifice printability for photographic accuracy.
+
+Always optimize for the final physical product.
+
+================ COMPOSITION RULES ==================
+
+# COMPOSITION
+
+Place the truck inside a balanced circular composition.
+
+The truck should remain the main visual element.
+
+Preserve the original framing and natural proportions of the vehicle.
+
+If the trailer is removed, extend the rear chassis only enough to preserve the visual balance of the truck.
+
+Never allow the remaining chassis or trailer section to occupy more than approximately 20% of the total truck length inside the composition.
+
+## Perspective
+
+Preserve the original viewing angle.
+
+Never rotate the truck.
+
+Never convert a front three-quarter view into a side view.
+
+Never exaggerate perspective.
+
+Never change the apparent camera height.
+
+Preserve the natural proportions created by the original camera position.
+
+================ IDENTITY RULES =====================
+
+TRUCK IDENTITY
+
+The generated artwork must represent the exact truck shown in the uploaded photo.
+
+Never transform the truck into another model or another brand.
+
+Preserve the characteristic cabin shape.
+
+Preserve the identity of the grille.
+
+Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
+
+Preserve the identity of the headlights.
+
+Preserve the mirrors.
+
+Preserve the wheels whenever visible.
+
+Preserve the roof accessories.
+
+Preserve the sun visor.
+
+Preserve owner-installed accessories whenever possible.
+
+Company decals should remain recognizable.
+
+Brand name should remain readable.
+
+Model designation should remain readable.
+
+License plate should remain recognizable whenever possible.
+
+Never invent text.
+
+Never replace text with different words.
+
+If text cannot be reproduced accurately, simplify it without changing its meaning.
+
+Never add new company logos, stickers or decorations.
+
+When simplifying the truck, preserve the elements that make this specific truck unique.
+
+The owner should immediately recognize their own vehicle.
+
+Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+
+---
+
+DECISION HIERARCHY
+
+When simplifying the artwork, always preserve elements in the following order of importance.
+
+LEVEL 1 — Truck Identity
+
+Never remove or significantly simplify:
+
+- truck brand
+- truck model
+- cabin shape
+- grille
+- headlights
+- mirrors
+
+LEVEL 2 — Company Identity
+
+Preserve whenever visible:
+
+- company name
+- company logo
+- company graphics
+- visor branding
+
+LEVEL 3 — Owner Signatures
+
+Preserve whenever they remain printable:
+
+- personalized windshield names
+- truck model designation
+- registration plate
+- custom curtains
+- owner-installed accessories
+- unique decorations
+
+LEVEL 4 — Technical Noise
+
+Remove or simplify whenever they reduce printability:
+
+- inspection stickers
+- certification labels
+- warning decals
+- tiny technical markings
+- serial labels
+- other visually insignificant details
+
+================ APPROVED IDENTITY MAP ==============
+
+The information below describes the exact vehicle shown
+in the source photograph.
+
+These manually verified facts override automatic
+interpretation.
+
+Do not mirror, relocate, reinterpret or invent any
+listed identity element.
+
+{
+  "vehicle": {
+    "brand": "DAF",
+    "model_designation": "480",
+    "model_designation_position": "lower right of the grille (from viewer's perspective)",
+    "cab_type": "high roof sleeper",
+    "viewing_angle": "full front",
+    "camera_height": "eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing directly toward the camera, symmetrical",
+    "important_crop_information": "bottom of bumper and most of mirrors included, full roof visible, minimal cropping at sides"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "H.Z. Logistics",
+      "position": "upper cab sign panel, horizontal",
+      "appearance": "dark blue text on white background with red company symbol"
+    },
+    {
+      "text": "Always in Condition",
+      "position": "middle of grille, above brand badge, diagonal (script)",
+      "appearance": "black script on white"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "H.Z. Logistics logo (red graphic)",
+      "position": "left of 'H.Z. Logistics' on sign panel",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "L plate (green circle with white 'L')",
+      "position": "lower grille, right of center (from viewer's perspective)",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "Romanian license plate 'SB 34XGP'",
+      "position": "center lower bumper",
+      "print_importance": "critical"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 3,
+        "position": "roof, slightly above windshield, evenly spaced",
+        "arrangement": "horizontal row",
+        "outer_shape": "rectangular/rounded"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "outer edges of bottom bumper, left and right",
+        "arrangement": "single on each end",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "mid-lower section of cab, integrated in main front panels left and right",
+      "outer_shape": "rectangular with stepped section"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      {
+        "description": "Green sticker with white digit '6' in circle",
+        "position": "lower left corner (from viewer's perspective)"
+      }
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 6,
+    "grille_description": "Black and chrome horizontal bars, angled trapezoidal layout, dominant central brand badge",
+    "headlight_description": "Rectangular, multi-section, integrated in lower front sides",
+    "bumper_description": "Blue with integrated lights, white and chrome central accent, license plate centered"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}
+
+================ PRINTABILITY RULES =================
+
+# PRINT RULES
+
+## General
+
+The artwork is designed specifically for FDM 3D printing.
+
+Reference printer: Bambu Lab P1S.
+
+Reference nozzle: 0.4 mm.
+
+Design for the physical object first, not for the digital preview.
+
+The final artwork should be immediately ready for slicing.
+
+Prioritize structural strength, readability and clean printable geometry over photographic accuracy.
+
+---
+
+## Line Quality
+
+Minimum printable line width: 0.6 mm.
+
+Maintain consistent line thickness throughout the design.
+
+Use bold, continuous lines.
+
+Avoid extremely thin lines.
+
+Every line should have a structural purpose.
+
+---
+
+## Structural Integrity
+
+Avoid floating elements.
+
+Avoid isolated islands.
+
+Avoid fragile connections.
+
+Every important detail must connect naturally to the main design.
+
+The final artwork should print cleanly without manual editing.
+
+---
+
+## Small Details
+
+If a detail is too small to print reliably, simplify it while preserving the character of the truck.
+
+Simplify very small details before removing important visual identity.
+
+Prefer fewer strong shapes instead of many tiny details.
+
+Never create unreadable micro-details.
+
+---
+
+## Text
+
+Only preserve text that contributes to the identity of the truck.
+
+If small decorative text cannot be reproduced with reliable readability at the target print size, simplify or remove it instead of creating unreadable tiny details.
+
+---
+
+## Round Lights
+
+Round lights and auxiliary light units must be simplified into bold printable geometry.
+
+Do not reproduce:
+
+- internal reflector patterns
+- concentric rings
+- thin spokes
+- star patterns
+- micro-details inside the lamp
+
+Preserve only the outer shape and visual identity of the light.
+
+---
+
+## Multiple Auxiliary Lights
+
+If multiple identical auxiliary lights are mounted together, preserve the overall arrangement and spacing.
+
+Do not reproduce every internal reflector detail.
+
+Each light should remain simple, bold and printable.
+
+---
+
+## Meshes & Protective Grilles
+
+Large mesh patterns, protective guards and grille inserts should preserve their overall appearance but be simplified into bold printable geometry.
+
+Avoid tiny openings and dense mesh structures.
+
+---
+
+## Final Validation
+
+Before accepting the artwork ask:
+
+Would this successfully print with a standard 0.4 mm nozzle?
+
+If not,
+
+simplify.
+
+================ PROMPT TEMPLATE ====================
+
+# General Style
+
+<!--
+Purpose:
+
+Defines the overall artistic direction and visual philosophy of the generated design.
+This module should describe WHAT the final artwork should look like, not HOW individual truck elements are preserved.
+-->
+
+Create a clean, elegant, premium industrial design.
+
+The result must look like a professionally designed wall plaque, not a photo.
+
+Use only solid black and white.
+
+No grayscale.
+
+No shadows.
+
+No gradients.
+
+No sketch effect.
+
+No realistic rendering.
+
+White space is an intentional design element.
+
+---
+
+# Composition
+
+<!--
+Purpose:
+Defines the composition, framing and spatial arrangement of the artwork.
+This module controls how the truck is positioned inside the final design, independent of its identity or styling.
+-->
+
+Keep the original camera angle and perspective.
+
+Place the truck inside a perfect circular frame.
+
+The truck should occupy approximately 90% of the circle.
+
+Remove the complete background.
+
+## Truck Priority
+
+The truck cab is the hero of the artwork.
+
+If a trailer is present, completely remove it or reduce it to a minimal rear chassis.
+
+Never allow the trailer to dominate the composition.
+
+The cab should occupy approximately 70–90% of the visible vehicle while maintaining balanced white space inside the circular frame.
+
+---
+
+# Truck Identity
+
+<!--
+Purpose:
+Defines which visual identity elements of the truck must always be preserved.
+This module protects the uniqueness of the vehicle, regardless of style or print simplification.
+-->
+
+Preserve the exact truck brand and model.
+
+Keep the characteristic shape of the cab.
+
+Keep the identity of the grille.
+
+Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
+
+Keep mirrors and windshield.
+
+Do not redesign the truck.
+
+Preserve owner-installed accessories whenever possible.
+
+Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+
+## Window Interior Strategy
+
+Keep the interior of the windshield visually clean and open.
+
+Preserve only meaningful identity elements visible through the windows, including:
+
+- curtains
+- driver names
+- mascots
+- dashboard decorations
+- meaningful interior accessories
+
+Do not fill empty window areas with unnecessary dark shapes.
+
+A clean interior improves readability while preserving the unique identity of the truck.
+
+---
+
+# Text Rules
+
+<!--
+Purpose:
+Defines how all textual elements should be handled.
+This module controls readability, scaling and preservation of all truck-related text.
+-->
+
+Make all important text larger and cleaner.
+
+Brand name must be clearly readable.
+
+Model designation must be clearly readable.
+
+Company name should be large and balanced.
+
+License plate should remain readable but simple.
+
+Never invent or replace visible text.
+If text cannot be reproduced accurately, simplify it but never change it.
+
+## Intelligent Text Scaling
+
+Preserve all important identity text.
+
+Automatically increase the size of important text whenever necessary to ensure readability after FDM printing.
+
+Priority order:
+
+1. Truck brand
+2. Model designation
+3. Company name
+4. Windshield names
+5. License plate
+6. Driver names
+7. Important custom lettering
+
+Slight scaling is preferred over exact photographic proportions whenever readability would otherwise be lost.
+
+---
+
+# Printability
+
+<!--
+Purpose:
+Defines the physical constraints of FDM printing.
+This module ensures that every generated design is optimized for reliable manufacturing rather than only visual appearance.
+-->
+
+Use black only where it improves readability after 3D printing.
+
+Clean white separation lines.
+
+Balanced contrast.
+
+Smooth curves.
+
+Vector-like appearance.
+
+The design must look excellent after 3D printing, not only on a screen.
+
+## Grille Strategy
+
+Preserve the unique identity of every manufacturer's grille.
+
+Maintain the overall grille layout and proportions.
+
+Simplify repetitive micro geometry whenever necessary for reliable FDM printing.
+
+Prefer bold printable shapes over highly accurate but fragile details.
+
+The grille must remain instantly recognizable even after simplification.
+
+## Standard vs Premium Detail Mode
+
+Every design should be optimized primarily for reliable FDM printing with a 0.4 mm nozzle.
+
+For standard production:
+
+- simplify complex side graphics
+- simplify wheel details
+- simplify grille micro geometry
+- simplify headlight internals
+- remove decorative micro elements
+
+For premium projects using a 0.2 mm nozzle, preserve additional detail whenever it significantly improves the final product.
+
+Always prioritize consistent print quality over maximum visual complexity.
+
+---
+
+# Simplification
+
+<!--
+Purpose:
+Defines how visual complexity should be reduced while preserving truck identity.
+This module controls simplification decisions required for high-quality FDM printing.
+-->
+
+Design for a 0.4 mm nozzle.
+
+Minimum printable line width about 0.6 mm.
+
+Avoid extremely thin lines.
+
+Avoid floating elements.
+
+Every important element should connect naturally with the design.
+
+## Headlight Strategy
+
+Preserve the exact number, position and overall shape of all headlights and auxiliary lights.
+
+Do not redesign or reposition any lighting elements.
+
+Simplify only the internal geometry of each light to ensure reliable printing with a 0.4 mm nozzle.
+
+Avoid tiny circles, thin rings and decorative micro details inside the lamps.
+
+The vehicle should remain instantly recognizable by its lighting signature even after simplification.
+
+## Intelligent Detail Filtering
+
+Not every visible detail from the original photo should be preserved.
+
+Automatically remove or simplify elements that fall below the minimum printable size for a 0.4 mm nozzle.
+
+Examples include:
+
+- tiny stickers
+- micro logos
+- decorative symbols
+- very small text
+- thin ornamental lines
+
+Preserve recognizable identity instead of photographic completeness.
+
+Removing insignificant details is preferred over generating fragile or unreadable geometry.
+
+## Wheel Strategy
+
+Preserve the overall appearance and recognizable design of the wheels.
+
+Maintain the number of wheels, rim proportions and characteristic style.
+
+Reduce tiny holes, thin rings and micro details that cannot be reproduced reliably with a 0.4 mm nozzle.
+
+The wheel should immediately look correct, even if some internal details are simplified.
+
+Prioritize visual identity over mechanical accuracy.
+
+---
+
+# Negative Rules
+
+<!--
+Purpose:
+Defines what the AI must explicitly avoid generating.
+This module prevents common generation errors and protects design consistency.
+-->
+
+No background.
+
+No scenery.
+
+No people.
+
+No buildings.
+
+No road.
+
+No trees.
+
+No reflections.
+
+No textures.
+
+No dirt.
+
+No random decorative patterns.
+
+No fragile details.
+
+No additional logos or graphics outside the truck.
+
+---
+
+# Style DNA
+
+<!--
+Purpose:
+Defines the artistic DNA and emotional character of the final artwork.
+This module ensures that every generated design follows the unique PrintSketch visual language.
+-->
+
+The final artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
+
+The artwork should contain approximately 70–80% white space and 20–30% black elements.
+
+Use black only to define the truck shape.
+
+Avoid large solid black areas.
+
+The windshield must remain mostly white with only thin black outlines, window frame and wipers.
+
+The final artwork should feel clean, balanced and suitable for premium FDM 3D printing.
+
+The truck itself must always be the main visual element.
+
+---
+
+# Final Validation
+
+# Final Validation
+
+<!--
+Purpose:
+Defines the final quality checklist before the prompt is sent to the AI.
+This module verifies that all previous modules work together and that the generated design satisfies the PrintSketch Golden Rules.
+-->

@@ -1,0 +1,115 @@
+{
+  "vehicle": {
+    "brand": "DAF",
+    "model_designation": "480",
+    "model_designation_position": "lower right of the grille (from viewer's perspective)",
+    "cab_type": "high roof sleeper",
+    "viewing_angle": "full front",
+    "camera_height": "eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing directly toward the camera, symmetrical",
+    "important_crop_information": "bottom of bumper and most of mirrors included, full roof visible, minimal cropping at sides"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "H.Z. Logistics",
+      "position": "upper cab sign panel, horizontal",
+      "appearance": "dark blue text on white background with red company symbol"
+    },
+    {
+      "text": "Always in Condition",
+      "position": "middle of grille, above brand badge, diagonal (script)",
+      "appearance": "black script on white"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "H.Z. Logistics logo (red graphic)",
+      "position": "left of 'H.Z. Logistics' on sign panel",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "L plate (green circle with white 'L')",
+      "position": "lower grille, right of center (from viewer's perspective)",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "Romanian license plate 'SB 34XGP'",
+      "position": "center lower bumper",
+      "print_importance": "critical"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 3,
+        "position": "roof, slightly above windshield, evenly spaced",
+        "arrangement": "horizontal row",
+        "outer_shape": "rectangular/rounded"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "outer edges of bottom bumper, left and right",
+        "arrangement": "single on each end",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "mid-lower section of cab, integrated in main front panels left and right",
+      "outer_shape": "rectangular with stepped section"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      {
+        "description": "Green sticker with white digit '6' in circle",
+        "position": "lower left corner (from viewer's perspective)"
+      }
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 6,
+    "grille_description": "Black and chrome horizontal bars, angled trapezoidal layout, dominant central brand badge",
+    "headlight_description": "Rectangular, multi-section, integrated in lower front sides",
+    "bumper_description": "Blue with integrated lights, white and chrome central accent, license plate centered"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

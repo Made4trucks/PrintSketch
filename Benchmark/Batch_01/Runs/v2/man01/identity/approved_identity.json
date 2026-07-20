@@ -1,0 +1,98 @@
+{
+  "vehicle": {
+    "brand": "MAN",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "high-roof sleeper cab (visible from side window profile and roof height)",
+    "viewing_angle": "full frontal, very slightly to the left",
+    "camera_height": "low (camera appears to be at or just below the headlight level)"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing forward, slightly turned left",
+    "important_crop_information": "full cab, left bumper mostly visible, right rear of chassis cropped"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": false,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "DUTCH COMMANDER",
+      "position": "top of cab, on a lightbox/banner above windshield, horizontal orientation",
+      "appearance": "white uppercase lettering with Dutch flag stripes on each side, black background, 2 astronaut figures at each end"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "astronaut figures",
+      "position": "each end of the 'DUTCH COMMANDER' banner/lightbox",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 8,
+        "position": "front edge of cab roof, above windshield",
+        "arrangement": "horizontal row (slight arc), 4 left, 4 right of center banner",
+        "outer_shape": "circular"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 5,
+        "position": "front grille, centered on lower grille section",
+        "arrangement": "horizontal row",
+        "outer_shape": "circular"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "far left and right lower front corners of the cab",
+      "outer_shape": "rectangular with an angular outline"
+    }
+  },
+  "windows": {
+    "windshield_contents": [],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 2,
+    "grille_description": "two wide horizontal bars, with central 'MAN' badge zone, outlined by metallic bezel, lower bar split by integrated auxiliary lamps",
+    "headlight_description": "two main headlights, rectangular with sharp angular points, each with integrated indicator and possible LED strip",
+    "bumper_description": "wide, deep, color-matched with sculpted contours, lower edge features accent line"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": [
+    "model designation not identifiable on grille or other visible locations",
+    "license plate area present but text is not readable"
+  ]
+}
