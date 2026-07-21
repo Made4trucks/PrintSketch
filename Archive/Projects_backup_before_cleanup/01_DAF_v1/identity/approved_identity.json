@@ -1,0 +1,103 @@
+{
+  "vehicle": {
+    "brand": "DAF",
+    "model_designation": "480",
+    "model_designation_position": "lower right of grille (from viewer's perspective)",
+    "cab_type": "high roof sleeper cab",
+    "viewing_angle": "front, slightly low and central",
+    "camera_height": "slightly below windshield height"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "directly facing camera, centered",
+    "important_crop_information": "lower bumper edges and upper roof lamps fully included, left and right mirrors mostly included"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 70,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "H.Z. Logistics",
+      "position": "horizontal, upper front sign panel above windshield",
+      "appearance": "blue sans-serif on white background with red HZ icon"
+    },
+    {
+      "text": "Always in Condition",
+      "position": "center, above grille on red stripe",
+      "appearance": "script-like font, black on white"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "HZ logo (red graphic)",
+      "position": "to left of 'H.Z. Logistics' on upper front panel",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 3,
+        "position": "centered on roof above windshield",
+        "arrangement": "horizontal row",
+        "outer_shape": "rectangular/rounded"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "outer corners of lower bumper",
+        "arrangement": "one per side",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "left and right edge of cab, embedded in bumper",
+      "outer_shape": "complex, stacked/rectangular with multiple segments"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "round green sticker with number '6' (lower left, from viewer's perspective)",
+      "a small set of stickers/labels (center base of windshield)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "five prominent horizontal silver bars interleaved with black, wide V-shape cover to most of the grille area",
+    "headlight_description": "multi-segment composite headlamps with LED accents, at each lower corner",
+    "bumper_description": "prominent blue bumper with integrated license plate holder, horizontal fog/DRL light segments at corners"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

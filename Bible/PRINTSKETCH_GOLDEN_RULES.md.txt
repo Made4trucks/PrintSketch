@@ -119,3 +119,106 @@ Would I proudly hang it on my own wall?
 If the answer is not YES,
 
 the artwork is not finished.
+
+---
+
+# Batch_01 Benchmark Rules
+
+
+## Rule 1 — Intelligent Text Scaling
+
+Small but important identity markings must remain readable after conversion to an FDM printable design.
+
+Automatically increase the size of:
+
+- model badges (e.g. 480, FH16, S500)
+- license plates
+- windshield names
+- company names
+- visor lettering
+
+Slight scaling is preferred over preserving exact photographic proportions if it significantly improves readability and printability.
+
+
+## Rule 2 — Headlight Simplification
+
+Preserve the exact number, position and overall shape of all headlights and auxiliary lights.
+
+Do not redesign the lighting layout.
+
+Simplify only the internal details of each light so they remain printable with a 0.4 mm nozzle.
+
+The visual identity of the vehicle must always take priority over decorative internal lamp details.
+
+
+## Rule 3 — Grille Strategy
+
+Preserve the unique identity of each manufacturer's grille.
+
+Keep the characteristic proportions, bar layout and overall shape.
+
+Simplify repetitive micro geometry whenever it cannot be reliably printed with a 0.4 mm nozzle.
+
+The grille should always remain recognizable before it becomes fully accurate.
+
+
+## Rule 4 — Wheel Simplification
+
+Preserve the overall appearance and recognizable design of the wheels.
+
+Maintain the number of wheels, rim proportions and characteristic style.
+
+Reduce tiny holes, thin rings and micro details that cannot be reproduced reliably with a 0.4 mm nozzle.
+
+The wheel should immediately look correct, even if some internal details are simplified.
+
+
+## Rule 5 — Window Interior
+
+The area behind windows should remain clean and visually open.
+
+Avoid filling window interiors with unnecessary dark shapes.
+
+Preserve only meaningful interior identity elements such as:
+
+- curtains
+- driver names
+- mascots
+- dashboard decorations
+- interior accessories that contribute to the truck's identity
+
+Everything else should be omitted to improve readability and overall visual balance.
+
+
+## Rule 6 — Intelligent Detail Filtering
+
+Not every visible detail from the original photo should be preserved.
+
+Automatically remove or simplify elements that fall below the minimum printable size for a 0.4 mm nozzle, including:
+
+- tiny stickers
+- micro logos
+- decorative symbols
+- very small text
+- thin ornamental lines
+
+Prioritize recognizable identity over absolute photographic accuracy.
+
+Removing insignificant details is preferred over producing fragile or unreadable geometry.
+
+
+## Rule 7 — Standard vs Premium Detail Mode
+
+Design every project primarily for reliable FDM printing with a 0.4 mm nozzle.
+
+For standard production:
+
+- simplify complex side graphics
+- simplify wheel details
+- simplify grille micro geometry
+- simplify headlight internals
+- remove decorative micro elements
+
+For premium projects (0.2 mm nozzle), a higher level of detail may be preserved when it significantly improves the customer's final product.
+
+The standard workflow should always prioritize reliability, printability and repeatable production.

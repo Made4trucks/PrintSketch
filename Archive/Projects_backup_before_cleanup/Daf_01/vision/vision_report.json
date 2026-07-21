@@ -1,0 +1,112 @@
+{
+  "vehicle": {
+    "brand": "DAF",
+    "model_designation": "480",
+    "model_designation_position": "front lower right (viewer’s left on truck grille)",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "front-left three-quarter",
+    "camera_height": "approximately at cab midline"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor and trailer visible",
+    "truck_orientation": "facing toward left and slightly toward camera",
+    "important_crop_information": "entire cab visible, front fully within frame, rear of trailer slightly cropped"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": false,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "MANDERSLOOT",
+      "position": "cab front above windshield (horizontal blue banner)",
+      "appearance": "white uppercase text on blue"
+    },
+    {
+      "text": "mandersloot",
+      "position": "trailer side, center-right (horizontal red text)",
+      "appearance": "red lowercase text"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "POLSKA",
+      "position": "center front of cab, top of grille (horizontal green band)",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "PZ-1R163",
+      "position": "front bumper, left of center (license plate)",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "front bumper, lower corners left and right",
+        "arrangement": "horizontal row (one at each corner)",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "front, left and right sides integrated in the grille/fascia",
+      "outer_shape": "angular rectangular"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "curtain with white/cream scalloped edge (top of windshield, inside)",
+      "dashboard objects including two name plates: 'MACIEJ' and another unreadable name",
+      "two round stickers (left lower windshield, inside)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "Five large horizontal black bars, integrated with angular bodywork.",
+    "headlight_description": "Angular, integrated in fascia, with distinct LED strip above main lamp.",
+    "bumper_description": "Large, body-colored with two rectangular fog/bumper lights at corners."
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": [
+    "Exact text of dashboard name plate (left of 'MACIEJ') is not readable.",
+    "Full roof not visible, possible roof lights beyond visible portion."
+  ]
+}

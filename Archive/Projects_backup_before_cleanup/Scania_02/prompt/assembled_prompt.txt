@@ -347,7 +347,114 @@ interpretation.
 Do not mirror, relocate, reinterpret or invent any
 listed identity element.
 
-No approved vehicle-specific identity map was supplied.
+{
+  "vehicle": {
+    "brand": "SCANIA",
+    "model_designation": "R420",
+    "model_designation_position": "lower right of front grille (viewer’s perspective)",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "front left three-quarter view",
+    "camera_height": "low (approximately at headlight/bumper level)"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor with attached trailer visible",
+    "truck_orientation": "facing partially toward right and front (relative to viewer)",
+    "important_crop_information": "left edge of trailer and lower part of right front wheel slightly cropped"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 65,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "KOOPS",
+      "position": "large horizontal text, upper front panel just above windshield",
+      "appearance": "white bold capital letters on blue background"
+    },
+    {
+      "text": "WALTER KOOPS",
+      "position": "horizontal text, left cab door",
+      "appearance": "blue capital letters"
+    },
+    {
+      "text": "WALTER KOOPS",
+      "position": "horizontal text, upper left side of trailer",
+      "appearance": "blue capital letters, large size"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Martijn Maurho",
+      "position": "bottom right corner of the image (photographer signature, not on the truck)",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 4,
+        "position": "across the cab roof, above the windshield",
+        "arrangement": "horizontal row",
+        "outer_shape": "small circle/oval"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 4,
+        "position": "lower front bumper, two per side",
+        "arrangement": "symmetrical groups",
+        "outer_shape": "circular/fog"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "far left and right ends above bumper, integrated in headlight clusters",
+      "outer_shape": "rectangular"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "hanging ornament (center, interior)",
+      "dashboard item (left, interior)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 4,
+    "grille_description": "4 wide horizontal bars",
+    "headlight_description": "rectangular, integrated assemblies far left and right; each contains at least 2 elements",
+    "bumper_description": "large, color-matched with inset lighting; number plate centered"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}
 
 ================ PRINTABILITY RULES =================
 

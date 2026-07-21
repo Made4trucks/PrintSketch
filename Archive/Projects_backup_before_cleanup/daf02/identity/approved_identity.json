@@ -1,0 +1,118 @@
+{
+  "vehicle": {
+    "brand": "DAF",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "",
+    "viewing_angle": "front-left three-quarter (frontal & left side visible, top down tilt)",
+    "camera_height": "above ground level, approximately headlight height"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor with trailer visible",
+    "truck_orientation": "angled right in image, front facing viewer, left side visible",
+    "important_crop_information": "bottom of left bumper and lower parts of left wheel are cropped; rear of trailer is not shown"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 70,
+    "cab_fully_visible": false,
+    "front_fully_visible": false,
+    "roof_fully_visible": false,
+    "bumper_fully_visible": false,
+    "left_mirror_visible": true,
+    "right_mirror_visible": false,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "acceptable",
+    "crop_quality": "acceptable",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "good"
+  },
+  "company_identity": [
+    {
+      "text": "KSN",
+      "position": "roof sign, center, above windshield, horizontal orientation",
+      "appearance": "white on black background, large block letters"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "KOŁO",
+      "position": "front interior windshield, left side, horizontal",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "KAMIL",
+      "position": "front interior windshield, right side, horizontal",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "DAF",
+      "position": "center of grille, above lower grille bars, horizontal",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "\"za guzik no glowy\" (uncertain phrase, likely decorative)",
+      "position": "interior windshield, center, horizontal",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "roof, above windshield, arranged in a straight horizontal row",
+        "arrangement": "straight horizontal row",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "extremes of lower bumper, left and right corners",
+        "arrangement": "left/right symmetry",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "integrated into lower front, one left, one right",
+      "outer_shape": "irregular, stepped trapezoid"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "KOŁO (left)",
+      "za guzik no glowy (center)",
+      "KAMIL (right)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 4,
+    "grille_description": "four wide horizontal bars, white, occupying most of central grille area",
+    "headlight_description": "main headlights are large and stepped, with clear inner segmentation; indicator or DRL at upper corner",
+    "bumper_description": "white bumper with integrated rectangular lights at outer edges"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": [
+    "Cab type is not visibly labeled",
+    "Exact model designation is not visible anywhere on cab",
+    "Roof badge/element on left and right (spiral black object) is not identified"
+  ]
+}

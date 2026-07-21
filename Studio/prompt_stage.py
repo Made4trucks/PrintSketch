@@ -1,7 +1,8 @@
 from pathlib import Path
 
 from pipeline_stage import PipelineStage
-from prompt_builder import build_prompt
+from prompt_compiler import PromptCompiler
+from prompt_context import PromptContext
 
 
 class PromptStage(PipelineStage):
@@ -57,9 +58,11 @@ class PromptStage(PipelineStage):
             exist_ok=True,
         )
 
-        prompt = build_prompt(
+        context = PromptContext(
             identity_map_path=self.identity_map_path
         )
+
+        prompt = PromptCompiler(context).compile()
 
         self.output_path.write_text(
             prompt,

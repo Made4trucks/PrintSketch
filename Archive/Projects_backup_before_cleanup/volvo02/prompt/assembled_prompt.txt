@@ -347,7 +347,126 @@ interpretation.
 Do not mirror, relocate, reinterpret or invent any
 listed identity element.
 
-No approved vehicle-specific identity map was supplied.
+{
+  "vehicle": {
+    "brand": "VOLVO",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "high-roof sleeper cab (visible aerodynamic roof and side panels)",
+    "viewing_angle": "front-left three-quarters",
+    "camera_height": "slightly below cab roof level, approximately headlight height"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "front-left three-quarters with left side and most of front visible",
+    "important_crop_information": "complete cab, left side, and lower front are visible, but right rear wheels and far right cab edge are cropped"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 90,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": false,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": false,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "WIJNEN",
+      "position": "on roof, above windshield (horizontal, yellow letters on blue background)",
+      "appearance": "horizontal, central, high-visibility yellow block letters"
+    },
+    {
+      "text": "WIJNEN",
+      "position": "on left door, above yellow band (horizontal, yellow letters on blue background)",
+      "appearance": "horizontal, medium size, clean block font"
+    },
+    {
+      "text": "WTS",
+      "position": "side of cab (large, red letters, partially on blue background, partially over yellow band)",
+      "appearance": "oversized, bold red sans-serif"
+    },
+    {
+      "text": "wijnentradingservice.nl",
+      "position": "lower left side skirt near rear wheels (small horizontal yellow letters)",
+      "appearance": "horizontal, small, thin yellow font"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "VOLVO",
+      "position": "center front, grille area, horizontal, large red letters",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "Vooruit de Beule",
+      "position": "right above side window on cab, angled script in yellow",
+      "print_importance": "optional"
+    },
+    {
+      "text_or_element": "Founded at 01-04-2023",
+      "position": "under “WTS” on side of cab (horizontal, small yellow letters)",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 2,
+        "position": "roof, far left and far right edges",
+        "arrangement": "horizontal row",
+        "outer_shape": "round"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 2,
+        "position": "within main grille, left and right from center",
+        "arrangement": "horizontal row",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "lower bumper, outer left and right corners",
+        "arrangement": "horizontal row at extreme ends",
+        "outer_shape": "round"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "lower section of front, extreme left and right sides",
+      "outer_shape": "vertical cluster/stack, sharp-edged"
+    }
+  },
+  "windows": {
+    "windshield_contents": [],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 2,
+    "grille_description": "two wide horizontal bars, central circular Volvo logo, mesh background, integrated rectangular lights",
+    "headlight_description": "each side: stacked, angular L-shaped assemblies with vertical LED signature pattern, DLRs above, indicator and main headlamp elements below",
+    "bumper_description": "full-width blue with two integrated round fog/auxiliary lights at both lower corners, thin and color-matched to cab"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}
 
 ================ PRINTABILITY RULES =================
 
@@ -463,14 +582,9 @@ simplify.
 
 ================ PROMPT TEMPLATE ====================
 
-# General Style
+Transform the uploaded European truck photo into a premium black-and-white circular wall decoration designed specifically for FDM 3D printing.
 
-<!--
-Purpose:
-
-Defines the overall artistic direction and visual philosophy of the generated design.
-This module should describe WHAT the final artwork should look like, not HOW individual truck elements are preserved.
--->
+GENERAL STYLE
 
 Create a clean, elegant, premium industrial design.
 
@@ -490,15 +604,7 @@ No realistic rendering.
 
 White space is an intentional design element.
 
----
-
-# Composition
-
-<!--
-Purpose:
-Defines the composition, framing and spatial arrangement of the artwork.
-This module controls how the truck is positioned inside the final design, independent of its identity or styling.
--->
+COMPOSITION
 
 Keep the original camera angle and perspective.
 
@@ -508,25 +614,7 @@ The truck should occupy approximately 90% of the circle.
 
 Remove the complete background.
 
-## Truck Priority
-
-The truck cab is the hero of the artwork.
-
-If a trailer is present, completely remove it or reduce it to a minimal rear chassis.
-
-Never allow the trailer to dominate the composition.
-
-The cab should occupy approximately 70–90% of the visible vehicle while maintaining balanced white space inside the circular frame.
-
----
-
-# Truck Identity
-
-<!--
-Purpose:
-Defines which visual identity elements of the truck must always be preserved.
-This module protects the uniqueness of the vehicle, regardless of style or print simplification.
--->
+TRUCK IDENTITY
 
 Preserve the exact truck brand and model.
 
@@ -544,31 +632,8 @@ Preserve owner-installed accessories whenever possible.
 
 Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
 
-## Window Interior Strategy
 
-Keep the interior of the windshield visually clean and open.
-
-Preserve only meaningful identity elements visible through the windows, including:
-
-- curtains
-- driver names
-- mascots
-- dashboard decorations
-- meaningful interior accessories
-
-Do not fill empty window areas with unnecessary dark shapes.
-
-A clean interior improves readability while preserving the unique identity of the truck.
-
----
-
-# Text Rules
-
-<!--
-Purpose:
-Defines how all textual elements should be handled.
-This module controls readability, scaling and preservation of all truck-related text.
--->
+TEXT
 
 Make all important text larger and cleaner.
 
@@ -583,33 +648,35 @@ License plate should remain readable but simple.
 Never invent or replace visible text.
 If text cannot be reproduced accurately, simplify it but never change it.
 
-## Intelligent Text Scaling
+DETAIL LEVEL
 
-Preserve all important identity text.
+Design for a 0.4 mm nozzle.
 
-Automatically increase the size of important text whenever necessary to ensure readability after FDM printing.
+Minimum printable line width about 0.6 mm.
 
-Priority order:
+Avoid extremely thin lines.
 
-1. Truck brand
-2. Model designation
-3. Company name
-4. Windshield names
-5. License plate
-6. Driver names
-7. Important custom lettering
+Avoid floating elements.
 
-Slight scaling is preferred over exact photographic proportions whenever readability would otherwise be lost.
+Every important element should connect naturally with the design.
 
----
+HEADLIGHTS
 
-# Printability
+Simplify internal headlight details.
 
-<!--
-Purpose:
-Defines the physical constraints of FDM printing.
-This module ensures that every generated design is optimized for reliable manufacturing rather than only visual appearance.
--->
+Keep the characteristic shape.
+
+Avoid tiny circles and very small decorative lines.
+
+GRILLE
+
+Keep the grille recognizable.
+
+Reduce unnecessary small openings.
+
+Prefer larger bold shapes.
+
+PRINT STYLE
 
 Use black only where it improves readability after 3D printing.
 
@@ -623,105 +690,7 @@ Vector-like appearance.
 
 The design must look excellent after 3D printing, not only on a screen.
 
-## Grille Strategy
-
-Preserve the unique identity of every manufacturer's grille.
-
-Maintain the overall grille layout and proportions.
-
-Simplify repetitive micro geometry whenever necessary for reliable FDM printing.
-
-Prefer bold printable shapes over highly accurate but fragile details.
-
-The grille must remain instantly recognizable even after simplification.
-
-## Standard vs Premium Detail Mode
-
-Every design should be optimized primarily for reliable FDM printing with a 0.4 mm nozzle.
-
-For standard production:
-
-- simplify complex side graphics
-- simplify wheel details
-- simplify grille micro geometry
-- simplify headlight internals
-- remove decorative micro elements
-
-For premium projects using a 0.2 mm nozzle, preserve additional detail whenever it significantly improves the final product.
-
-Always prioritize consistent print quality over maximum visual complexity.
-
----
-
-# Simplification
-
-<!--
-Purpose:
-Defines how visual complexity should be reduced while preserving truck identity.
-This module controls simplification decisions required for high-quality FDM printing.
--->
-
-Design for a 0.4 mm nozzle.
-
-Minimum printable line width about 0.6 mm.
-
-Avoid extremely thin lines.
-
-Avoid floating elements.
-
-Every important element should connect naturally with the design.
-
-## Headlight Strategy
-
-Preserve the exact number, position and overall shape of all headlights and auxiliary lights.
-
-Do not redesign or reposition any lighting elements.
-
-Simplify only the internal geometry of each light to ensure reliable printing with a 0.4 mm nozzle.
-
-Avoid tiny circles, thin rings and decorative micro details inside the lamps.
-
-The vehicle should remain instantly recognizable by its lighting signature even after simplification.
-
-## Intelligent Detail Filtering
-
-Not every visible detail from the original photo should be preserved.
-
-Automatically remove or simplify elements that fall below the minimum printable size for a 0.4 mm nozzle.
-
-Examples include:
-
-- tiny stickers
-- micro logos
-- decorative symbols
-- very small text
-- thin ornamental lines
-
-Preserve recognizable identity instead of photographic completeness.
-
-Removing insignificant details is preferred over generating fragile or unreadable geometry.
-
-## Wheel Strategy
-
-Preserve the overall appearance and recognizable design of the wheels.
-
-Maintain the number of wheels, rim proportions and characteristic style.
-
-Reduce tiny holes, thin rings and micro details that cannot be reproduced reliably with a 0.4 mm nozzle.
-
-The wheel should immediately look correct, even if some internal details are simplified.
-
-Prioritize visual identity over mechanical accuracy.
-
----
-
-# Negative Rules
-
-<!--
-Purpose:
-Defines what the AI must explicitly avoid generating.
-This module prevents common generation errors and protects design consistency.
--->
+NEGATIVE PROMPT
 
 No background.
 
@@ -747,15 +716,7 @@ No fragile details.
 
 No additional logos or graphics outside the truck.
 
----
-
-# Style DNA
-
-<!--
-Purpose:
-Defines the artistic DNA and emotional character of the final artwork.
-This module ensures that every generated design follows the unique PrintSketch visual language.
--->
+STYLE DNA
 
 The final artwork should resemble premium laser-cut industrial wall art rather than a black illustration.
 
@@ -771,14 +732,12 @@ The final artwork should feel clean, balanced and suitable for premium FDM 3D pr
 
 The truck itself must always be the main visual element.
 
----
+TRUCK PRIORITY
 
-# Final Validation
+The truck cab is the hero of the artwork.
 
-# Final Validation
+If a trailer is present, completely remove it or reduce it to a minimal rear chassis.
 
-<!--
-Purpose:
-Defines the final quality checklist before the prompt is sent to the AI.
-This module verifies that all previous modules work together and that the generated design satisfies the PrintSketch Golden Rules.
--->
+Never allow the trailer to dominate the composition.
+
+The cab should occupy approximately 70% of the truck itself.

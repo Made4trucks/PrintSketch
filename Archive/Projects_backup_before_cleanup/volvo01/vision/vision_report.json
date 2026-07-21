@@ -1,0 +1,108 @@
+{
+  "vehicle": {
+    "brand": "Volvo",
+    "model_designation": "FH16",
+    "model_designation_position": "Front, left and right sides of grille (both visible from viewer perspective)",
+    "cab_type": "High roof sleeper cab",
+    "viewing_angle": "Frontal (slightly left of center, low frontal view)",
+    "camera_height": "Slightly below cab level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "Tractor unit only, no trailer visible",
+    "truck_orientation": "Facing forward, aligned slightly left-of-center",
+    "important_crop_information": "Left and right extreme edges of tractor are visible; none of cab roof or bumper is cropped off"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 85,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "JAN RIETVELD TRANSPORT & Zn",
+      "position": "Roof name board, horizontal, center, above windshield",
+      "appearance": "White and gold text on blue board"
+    },
+    {
+      "text": "JAN RIETVELD TRANSPORT SLIEDRECHT TEL. 0184 412203",
+      "position": "Right cab door, vertical/horizontal stacked, right side (from viewer's perspective)",
+      "appearance": "Small, stacked pale blue text"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Dare to dream big",
+      "position": "Above windshield, horizontal, central band",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "Lynn",
+      "position": "Windshield, mid-lower center",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 5,
+        "position": "On top edge of cab roof, symmetrically spaced above windshield",
+        "arrangement": "Horizontal row, evenly spaced",
+        "outer_shape": "Round"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 4,
+        "position": "Front bumper, horizontal row below license plate",
+        "arrangement": "Horizontal row with same size, rectangular lens",
+        "outer_shape": "Rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "Each side of grille, vertically oriented within main headlight units",
+      "outer_shape": "Angular vertical cluster"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "Decorative scalloped curtain, tan color, full width",
+      "Text 'Lynn' (white, center lower windshield)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 7,
+    "grille_description": "Wide central grille with 7 horizontal silver bars, flanked by additional vertical fin details integrated into lower panels",
+    "headlight_description": "Vertically stacked, modern angular LED clusters on each side",
+    "bumper_description": "Integrated, body-colored, with four rectangular auxiliary lights"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

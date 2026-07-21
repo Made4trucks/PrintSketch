@@ -1,3 +1,9 @@
+<!--
+Prompt Version: Classic v1.1
+Architecture: Modular Prompt Engine
+Modules: 01–09
+-->
+
 Transform the uploaded European truck photo into a premium black-and-white circular wall decoration designed specifically for FDM 3D printing.
 
 GENERAL STYLE
