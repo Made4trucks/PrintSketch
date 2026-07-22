@@ -1,0 +1,99 @@
+{
+  "vehicle": {
+    "brand": "Renault",
+    "model_designation": "Highliner",
+    "model_designation_position": "Upper cab center, above windshield, horizontal orientation",
+    "cab_type": "High roof sleeper",
+    "viewing_angle": "Full frontal",
+    "camera_height": "Level with mid-cab"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "Tractor only",
+    "truck_orientation": "Facing directly towards camera",
+    "important_crop_information": "Cab sides fully inside frame, no major roof or bumper cut-off"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 90,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "R-A-S HAULAGE",
+      "position": "Front cab, center below windshield, horizontal orientation",
+      "appearance": "Large, bold blue and black letters, mixed case"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Thomas",
+      "position": "Center front lower section above grille",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "Roof above windshield, symmetrical group",
+        "arrangement": "Horizontal row",
+        "outer_shape": "Round with colored halos"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 6,
+        "position": "Bumper, lower front in grille",
+        "arrangement": "Horizontal row",
+        "outer_shape": "Small rectangular amber lights"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "Far left and right edges of cab front",
+      "outer_shape": "Rectangular, horizontal"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "Decorative text: Have Fun A Good Time Wishing Team"
+    ],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 6,
+    "grille_description": "Black, wide rectangular mesh with horizontal bar pattern, central diamond Renault badge",
+    "headlight_description": "Large, horizontal, two-section units with amber running lights above",
+    "bumper_description": "Body color blue with integrated rectangular amber lights, accent lines at edges"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": [
+    "If 'Highliner' is also model designation or trim line, exact relationship to Renault model range is not confirmed by image alone."
+  ]
+}

@@ -8,7 +8,10 @@ from nicegui import ui
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 BENCHMARK_ROOT = PROJECT_ROOT / "Benchmark" / "Batch_01"
 ORIGINALS_FOLDER = BENCHMARK_ROOT / "Originals"
-CURRENT_RUN_FOLDER = BENCHMARK_ROOT / "Runs" / "v2"
+CURRENT_RUN_FOLDER = max(
+    (BENCHMARK_ROOT / "Runs").iterdir(),
+    key=lambda p: p.stat().st_mtime,
+)
 
 SUPPORTED_FORMATS = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -99,8 +102,10 @@ def create_benchmark_lab() -> None:
             with ui.column().classes(
                 "w-1/2 min-w-0 items-center gap-2"
             ):
-                ui.label("CURRENT — v2").classes("font-bold")
-
+                ui.label(
+                    f"CURRENT — {CURRENT_RUN_FOLDER.name}"
+                ).classes("font-bold")
+                
                 current_image = ui.image().classes(
                     "w-full max-w-[560px] border rounded-lg"
                 )

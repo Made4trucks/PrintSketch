@@ -254,5 +254,5 @@ class BenchmarkRunner:
 if __name__ == "__main__":
 
     BenchmarkRunner(
-        run_name="v2"
-    ).run()
+    run_name=datetime.now().strftime("%Y%m%d_%H%M%S")
+).run()
