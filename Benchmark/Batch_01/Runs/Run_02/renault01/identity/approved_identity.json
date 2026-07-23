@@ -1,0 +1,107 @@
+{
+  "vehicle": {
+    "brand": "Renault",
+    "model_designation": "Highliner",
+    "model_designation_position": "Upper center above windshield, horizontally oriented",
+    "cab_type": "High cab, long distance",
+    "viewing_angle": "Full front view, symmetrical",
+    "camera_height": "Headlight level / low eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "Tractor unit only, no trailer visible",
+    "truck_orientation": "Centered, facing camera directly",
+    "important_crop_information": "Full front visible, no major crop of cab or bumper"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "R-A-S HAULAGE",
+      "position": "Center front of cab, horizontally oriented",
+      "appearance": "Bold blue (R-A-S) and black (HAULAGE) text, uppercase"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Thomas",
+      "position": "Lower grille bar, center, just above bumper",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "SolarGuard",
+      "position": "On license plate area, lower center of bumper",
+      "print_importance": "optional"
+    },
+    {
+      "text_or_element": "Have Fun A Good Time\nWork Long Time",
+      "position": "Windshield mid-upper center, white script text",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "Roof, above windshield, horizontal row",
+        "arrangement": "Horizontal row, evenly spaced",
+        "outer_shape": "Circular with grille covers"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 5,
+        "position": "Upper grille, horizontal line below windshield",
+        "arrangement": "Horizontal row, evenly spaced",
+        "outer_shape": "Rectangular/oblong"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 1,
+        "position": "Lower bumper, center",
+        "arrangement": "Single unit",
+        "outer_shape": "Rectangular (license plate light)"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "Far left and far right, integrated in cab vertical fascia",
+      "outer_shape": "Rectangular with angled inner edge"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "Have Fun A Good Time Work Long Time (white script, upper center)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 3,
+    "grille_description": "Three horizontal split sections, large Renault diamond badge in center",
+    "headlight_description": "Two main headlight units (left and right), each with amber LED accents and internal reflector segments",
+    "bumper_description": "Bold blue lower bumper with white edging, low to the ground, small central light/reflector"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

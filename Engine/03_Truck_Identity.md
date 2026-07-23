@@ -1,45 +1,128 @@
-TRUCK IDENTITY
+# Truck Identity
 
 The generated artwork must represent the exact truck shown in the uploaded photo.
 
-Never transform the truck into another model or another brand.
-
-Preserve the characteristic cabin shape.
-
-Preserve the identity of the grille.
-
-Preserve the original grille geometry, including the exact number, spacing and proportions of horizontal grille bars whenever they are clearly visible.
-
-Preserve the identity of the headlights.
-
-Preserve the mirrors.
-
-Preserve the wheels whenever visible.
-
-Preserve the roof accessories.
-
-Preserve the sun visor.
-
-Preserve owner-installed accessories whenever possible.
-
-Company decals should remain recognizable.
-
-Brand name should remain readable.
-
-Model designation should remain readable.
-
-License plate should remain recognizable whenever possible.
-
-Never invent text.
-
-Never replace text with different words.
-
-If text cannot be reproduced accurately, simplify it without changing its meaning.
-
-Never add new company logos, stickers or decorations.
-
-When simplifying the truck, preserve the elements that make this specific truck unique.
+Truck identity is always more important than decorative detail.
 
 The owner should immediately recognize their own vehicle.
 
-Preserve all unique truck identity elements, including sun visor lettering, company names, custom banners, model badges, auxiliary lights, grille lights, roof lights and other owner-specific visual features whenever they are clearly visible in the original photo.
+Another truck enthusiast should immediately recognize the correct brand and model.
+
+---
+
+## Identity Preservation
+
+Never change:
+
+- truck manufacturer
+- truck model
+- cabin proportions
+- characteristic grille shape
+- characteristic headlight signature
+- mirrors
+- roof accessories
+- sun visor
+
+Preserve the characteristic silhouette before preserving small details.
+
+---
+
+## Owner Identity
+
+Preserve whenever clearly visible:
+
+- company names
+- windshield banners
+- owner names
+- model badges
+- license plates
+- decorative stripes
+- auxiliary lights
+- grille lights
+- roof lights
+- custom paint
+- owner-installed accessories
+
+These elements define the identity of the individual truck.
+
+---
+
+## Identity Text
+
+Preserve:
+
+- manufacturer name
+- company name
+- truck model
+- license plate
+- owner names
+
+If text is clearly readable,
+preserve it.
+
+If text is partially readable,
+simplify it without changing its meaning.
+
+If text cannot be confirmed,
+omit it.
+
+Never guess.
+
+Never invent.
+
+---
+
+## Identity Scaling
+
+For improved readability after FDM printing,
+
+slightly enlarge important identity text.
+
+Preferred increase:
+
+- approximately 15–20%
+
+Applies to:
+
+- windshield banners
+- company names
+- license plates
+- model badges
+
+Readability is more important than photographic scale.
+
+---
+
+## Simplification
+
+Simplify geometry,
+
+never identity.
+
+Reduce detail,
+
+never recognition.
+
+---
+
+## Forbidden Actions
+
+Never:
+
+- change the truck model
+- change the manufacturer
+- invent text
+- invent logos
+- invent accessories
+- invent decorative graphics
+- replace one identity element with another
+
+---
+
+## Final Rule
+
+When simplification is necessary,
+
+always preserve the identity first,
+
+then simplify the geometry.

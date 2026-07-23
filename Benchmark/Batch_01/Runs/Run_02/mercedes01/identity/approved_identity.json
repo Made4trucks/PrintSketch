@@ -1,0 +1,103 @@
+{
+  "vehicle": {
+    "brand": "Mercedes-Benz",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "full frontal",
+    "camera_height": "eye level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "front facing, centered",
+    "important_crop_information": "Very slight cropping of lower right bumper corner; all crucial cab features enclosed."
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 85,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": false,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "WOHLWEND",
+      "position": "cab roof, above windshield, horizontally oriented",
+      "appearance": "large blue capitals on yellow background"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "FL 38080",
+      "position": "center of bumper, on license plate",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "neon blue rectangle element",
+      "position": "inside cab, lower central windshield interior",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "along cab roof leading edge, evenly spaced",
+        "arrangement": "horizontal row",
+        "outer_shape": "circular"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "outer left and outer right of lower bumper",
+        "arrangement": "symmetrical pair",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "mid-height, outer left and outer right of the cab front",
+      "outer_shape": "irregular trapezoidal/rectangular"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "two wipers",
+      "neon blue rectangle element inside cab"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 4,
+    "grille_description": "four horizontal silver bars with three leveled perforated mesh insert",
+    "headlight_description": "modern integrated units with two main lights per side and angled daytime running lights",
+    "bumper_description": "yellow with blue and red stripe accents, integrated lower lights, central plate holder"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

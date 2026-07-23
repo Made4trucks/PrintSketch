@@ -1,109 +1,132 @@
-# PRINT RULES
+# Print Rules
 
-## General
+The artwork is intended for direct FDM manufacturing.
 
-The artwork is designed specifically for FDM 3D printing.
+Every design decision must prioritize a clean, reliable and visually appealing physical print.
 
-Reference printer: Bambu Lab P1S.
+---
 
-Reference nozzle: 0.4 mm.
+## Manufacturing Target
 
-Design for the physical object first, not for the digital preview.
+Assume the artwork will be printed using:
 
-The final artwork should be immediately ready for slicing.
+- FDM technology
+- Bambu Lab P1S
+- 0.4 mm nozzle
+- PLA filament
+- Two-color print
+- Diameter between 150 mm and 220 mm
 
-Prioritize structural strength, readability and clean printable geometry over photographic accuracy.
+The artwork should require no manual editing before slicing.
+
+---
+
+## Geometry
+
+Use:
+
+- bold geometry
+- connected geometry
+- clean contours
+- smooth transitions
+- balanced negative space
+
+Avoid:
+
+- floating elements
+- isolated islands
+- fragile bridges
+- unnecessary complexity
+
+Every important element should be structurally connected whenever possible.
 
 ---
 
 ## Line Quality
 
-Minimum printable line width: 0.6 mm.
+Minimum printable line width:
 
-Maintain consistent line thickness throughout the design.
+**0.6 mm**
 
-Use bold, continuous lines.
+Prefer:
 
-Avoid extremely thin lines.
+- continuous lines
+- consistent thickness
+- visually strong edges
 
-Every line should have a structural purpose.
-
----
-
-## Structural Integrity
-
-Avoid floating elements.
-
-Avoid isolated islands.
-
-Avoid fragile connections.
-
-Every important detail must connect naturally to the main design.
-
-The final artwork should print cleanly without manual editing.
+Avoid decorative thin lines that do not improve recognition.
 
 ---
 
-## Small Details
+## Detail Resolution
 
-If a detail is too small to print reliably, simplify it while preserving the character of the truck.
+If a detail approaches the manufacturing limit,
 
-Simplify very small details before removing important visual identity.
+simplify it.
 
-Prefer fewer strong shapes instead of many tiny details.
+Never allow microscopic geometry to reduce overall print quality.
 
-Never create unreadable micro-details.
-
----
-
-## Text
-
-Only preserve text that contributes to the identity of the truck.
-
-If small decorative text cannot be reproduced with reliable readability at the target print size, simplify or remove it instead of creating unreadable tiny details.
+A larger simplified feature is preferable to a tiny accurate feature.
 
 ---
 
-## Round Lights
+## Readability
 
-Round lights and auxiliary light units must be simplified into bold printable geometry.
+Identity information has priority.
 
-Do not reproduce:
+Preserve whenever practical:
 
-- internal reflector patterns
-- concentric rings
-- thin spokes
-- star patterns
-- micro-details inside the lamp
+- manufacturer
+- company name
+- model badge
+- windshield banner
+- license plate
 
-Preserve only the outer shape and visual identity of the light.
-
----
-
-## Multiple Auxiliary Lights
-
-If multiple identical auxiliary lights are mounted together, preserve the overall arrangement and spacing.
-
-Do not reproduce every internal reflector detail.
-
-Each light should remain simple, bold and printable.
+Decorative text may be simplified or omitted.
 
 ---
 
-## Meshes & Protective Grilles
+## Decorative Geometry
 
-Large mesh patterns, protective guards and grille inserts should preserve their overall appearance but be simplified into bold printable geometry.
+Simplify:
 
-Avoid tiny openings and dense mesh structures.
+- mesh structures
+- protective grilles
+- auxiliary light internals
+- decorative textures
+- repeated micro-patterns
+
+Preserve only the geometry required for recognition.
 
 ---
 
-## Final Validation
+## Structural Strength
 
-Before accepting the artwork ask:
+The finished artwork should be:
 
-Would this successfully print with a standard 0.4 mm nozzle?
+- easy to print
+- mechanically robust
+- visually balanced
+- free of weak unsupported details
 
-If not,
+Every feature should contribute either to:
 
-simplify.
+- truck identity
+- structural integrity
+- visual composition
+
+Remove everything else.
+
+---
+
+## Final Manufacturing Check
+
+Before finalizing the artwork ask:
+
+- Would this print successfully on a standard 0.4 mm nozzle?
+- Would the finished print look clean from approximately one meter away?
+- Does every remaining detail improve the physical object?
+
+If any answer is "No",
+
+simplify further.

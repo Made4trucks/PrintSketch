@@ -1,0 +1,130 @@
+{
+  "vehicle": {
+    "brand": "Volvo",
+    "model_designation": "FH",
+    "model_designation_position": "right side of front grille (from viewer perspective)",
+    "cab_type": "high roof sleeper cab",
+    "viewing_angle": "front left three-quarter",
+    "camera_height": "eye level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing left and forward",
+    "important_crop_information": "leftmost rear wheels are slightly cropped, all main cab and front features are within frame"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 85,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": false,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "WIJNEN",
+      "position": "across roof light bar (horizontal, yellow letters)",
+      "appearance": "large, bold, yellow, all caps"
+    },
+    {
+      "text": "WIJNEN",
+      "position": "upper left cab door (horizontal)",
+      "appearance": "yellow, all caps"
+    },
+    {
+      "text": "WTS",
+      "position": "right side of cab, behind door (large vertical red letters, angled, partially cropped)",
+      "appearance": "very large, bold, partially overlapping yellow stripe"
+    },
+    {
+      "text": "wijnentruchtsportservice.nl",
+      "position": "lower right cab, above side skirt near fuel tank (horizontal)",
+      "appearance": "small yellow letters"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Volvo emblem and branding (circular, black/silver)",
+      "position": "center of upper grille",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "VOLVO (text)",
+      "position": "front center, above grille (horizontal, red letters)",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "FH",
+      "position": "front grille, right side (silver)",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "Queen of the Beale",
+      "position": "upper right cab, above yellow WTS (small, cursive yellow text)",
+      "print_importance": "optional"
+    },
+    {
+      "text_or_element": "NL-015243 (yellow text)",
+      "position": "below WIJNEN on right door",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 2,
+        "position": "left and right ends of roof bar (above windshield)",
+        "arrangement": "symmetrical, far left and right",
+        "outer_shape": "round"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 2,
+        "position": "in grille, below VOLVO text, above main grille cutout",
+        "arrangement": "horizontal row, left and right sides",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "outer left and right edges of lower bumper",
+        "arrangement": "horizontal, one per side",
+        "outer_shape": "round"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "left and right front corners",
+      "outer_shape": "angled vertical housing, integrated with DRL"
+    }
+  },
+  "windows": {
+    "windshield_contents": [],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 4,
+    "grille_description": "main grille with rectangular mesh pattern, 4 horizontal solid bars, Volvo roundel in center",
+    "headlight_description": "vertically stacked, angled, with integrated LED daytime running lights in L-shape",
+    "bumper_description": "painted to match cab, large and angular, yellow accent stripes, integrated fog/auxiliary lights"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

@@ -1,0 +1,12 @@
+{
+  "truck_size_score": 85,
+  "visibility_score": 100,
+  "identity_score": 92,
+  "perspective_score": 100,
+  "crop_score": 100,
+  "obstruction_score": 100,
+  "background_score": 100,
+  "printsketch_readiness_score": 96,
+  "status": "EXCELLENT",
+  "recommendation": "READY FOR PREMIUM PRODUCTION"
+}

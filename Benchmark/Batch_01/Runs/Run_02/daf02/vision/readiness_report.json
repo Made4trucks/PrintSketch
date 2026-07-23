@@ -1,0 +1,12 @@
+{
+  "truck_size_score": 100,
+  "visibility_score": 38,
+  "identity_score": 95,
+  "perspective_score": 85,
+  "crop_score": 65,
+  "obstruction_score": 100,
+  "background_score": 75,
+  "printsketch_readiness_score": 77,
+  "status": "ACCEPTABLE",
+  "recommendation": "MANUAL REVIEW RECOMMENDED"
+}

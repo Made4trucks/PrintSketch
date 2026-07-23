@@ -1,0 +1,95 @@
+{
+  "vehicle": {
+    "brand": "MAN",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "high-roof sleeper cab (visual interpretation only—no explicit text)",
+    "viewing_angle": "frontal, slightly low and centered",
+    "camera_height": "low, at or below grille level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing forward, slight turn to truck's left",
+    "important_crop_information": "entire cab and front wheels are visible; lower part of the bumper and the right side of the tractor are slightly cropped. No trailer is visible."
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 72,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": false,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": false,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "DUTCH COMMANDER",
+      "position": "top of cab, roof-mounted sign, centered",
+      "appearance": "white uppercase text bordered in black, with two small Dutch flags (red, white, blue stripes) on either side of 'DUTCH', flanked by astronaut mascot figures at corners"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "DUTCH COMMANDER roof sign including Dutch flags and mascot figures",
+      "position": "roof, centered, top edge",
+      "print_importance": "critical"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 7,
+        "position": "roof, arranged in a symmetrical horizontal row above windshield under the roof sign, with slight gaps between each; 4 on left, 1 center, 2 on right relative to truck's center",
+        "arrangement": "horizontal row, evenly spaced",
+        "outer_shape": "round"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 5,
+        "position": "integrated into grille, lower front central area",
+        "arrangement": "horizontal row, evenly spaced",
+        "outer_shape": "round"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "left and right sides of the bumper, outer corners",
+        "arrangement": "pair, one per side",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "on each side of the front fascia, below the grille",
+      "outer_shape": "rectangular with angled/complex contours"
+    }
+  },
+  "windows": {
+    "windshield_contents": [],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 3,
+    "grille_description": "three horizontal grille bars with integrated design, central large MAN badge, angular frame",
+    "headlight_description": "main headlights are angular, wraparound style with separate LED elements inside housing, position lights/turn signals integrated",
+    "bumper_description": "multi-piece lower bumper with modern aerodynamic styling, features 2 outer integrated fog/auxiliary lights, black and silver color separation"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

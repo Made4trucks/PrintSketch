@@ -1,0 +1,101 @@
+{
+  "vehicle": {
+    "brand": "DAF",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "",
+    "viewing_angle": "front left three-quarter",
+    "camera_height": "slightly above ground level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "trailer visible",
+    "truck_orientation": "viewed from front left, angled slightly toward viewer with trailer extending to rear right",
+    "important_crop_information": "front left corner is fully visible, but lower right portion of bumper and right mirror are cropped"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": false,
+    "front_fully_visible": false,
+    "roof_fully_visible": false,
+    "bumper_fully_visible": false,
+    "left_mirror_visible": true,
+    "right_mirror_visible": false,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "good",
+    "crop_quality": "acceptable",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "KSN",
+      "position": "roof-mounted black sign, centered above windshield, text orientation horizontal",
+      "appearance": "white uppercase letters on black background"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "\"KOŁO\" (left), \"KAMIL\" (right), other decorative items and text",
+      "position": "inside lower windshield, left and right, orientation horizontal",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "on roof above windshield, three on each side of central sign (KSN)",
+        "arrangement": "horizontal row, symmetrical groups",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "left and right corners of the lower bumper",
+        "arrangement": "single light each side",
+        "outer_shape": "round"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "left and right of grille",
+      "outer_shape": "complex multi-chamber; main part is rectangular with angled inner shape"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "curved banner with text and names",
+      "decorative elements (e.g. faux crystals, fringe on visor)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "five wide horizontal silver bars, black background, top bar houses DAF badge",
+    "headlight_description": "rectangular with rounded edges, composed of upper and lower sections (each with clear and amber elements)",
+    "bumper_description": "white, integrated with fog/spot lights at corners, left side cropped, lower edge contains license plate recess"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": [
+    "model_designation is not readable or present",
+    "precise cab type not specified on visible markings"
+  ]
+}

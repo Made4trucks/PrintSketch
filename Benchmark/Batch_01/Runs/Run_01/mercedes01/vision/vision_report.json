@@ -1,0 +1,107 @@
+{
+  "vehicle": {
+    "brand": "Mercedes-Benz",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "front, near center",
+    "camera_height": "eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing forward, perpendicular to viewer",
+    "important_crop_information": "lower corners of bumper slightly cropped, rest of cab intact"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 85,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": false,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": false,
+    "model_text_readable": false,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "WOHLWEND",
+      "position": "top of cab, center, above windshield",
+      "appearance": "large, bold font, blue colored, horizontal orientation"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Decorative blue, red, and silver trim graphic",
+      "position": "lower front, bordering grille and bumper",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "Neon blue light",
+      "position": "inside upper windshield, center",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 5,
+        "position": "roof above windshield",
+        "arrangement": "horizontal row",
+        "outer_shape": "round"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 4,
+        "position": "lower bumper, two per side",
+        "arrangement": "horizontal pairs",
+        "outer_shape": "round"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "mid-height, far left and right edges of grille",
+      "outer_shape": "complex, vertically elongated with angular outline"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "neon blue light",
+      "sun visor scalloped curtain"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 4,
+    "grille_description": "four wide horizontal metallic bars, silver, main Mercedes logo centered",
+    "headlight_description": "two large vertically-styled headlights with complex, angular shape and multiple inner elements",
+    "bumper_description": "large yellow bumper with air intakes, red/blue/silver decorative graphics, four round lights"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": [
+    "model designation not visible",
+    "company type/slogan (if present) not readable",
+    "possible small text on lower driver-side sun visor area"
+  ]
+}

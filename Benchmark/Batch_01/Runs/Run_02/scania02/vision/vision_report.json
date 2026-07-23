@@ -1,0 +1,98 @@
+{
+  "vehicle": {
+    "brand": "SCANIA",
+    "model_designation": "460 S",
+    "model_designation_position": "lower left grille (viewer’s left), horizontal",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "front-left three-quarter",
+    "camera_height": "slightly below cab roof, approximately headlight level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "angled front left, facing right and forward",
+    "important_crop_information": "lower right edge crops trailer connection area; top of cab, right fender, and both mirrors fully inside frame"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "H.Z. Logistics",
+      "position": "roof sign above windshield, horizontal",
+      "appearance": "blue text with red symbol on white background, bordered in blue"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "H.Z. (red symbol at start of company name)",
+      "position": "roof sign left of 'H.Z. Logistics' text",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 5,
+        "position": "roof, front edge",
+        "arrangement": "horizontal row, evenly spaced",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 2,
+        "position": "lower bumper, outer edges (left and right)",
+        "arrangement": "horizontal pair",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "mid bumper, left and right sides",
+      "outer_shape": "rectangular, multi-segment"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "green sticker (circle) left lower corner (viewer’s left)",
+      "purple/white rectangle sticker near left sticker"
+    ],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "five horizontal bars, upper three with large mesh openings, lower two solid with 'SCANIA' badge across second bar from top",
+    "headlight_description": "rectangular, complex multi-part design with separate clear sections",
+    "bumper_description": "blue, contoured, with two integrated bumper lights, registration plate centrally mounted"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

@@ -1,0 +1,118 @@
+{
+  "vehicle": {
+    "brand": "SCANIA",
+    "model_designation": "S 500",
+    "model_designation_position": "lower left grille, horizontal, and lower right grille, horizontal (as S line)",
+    "cab_type": "high roof sleeper cab",
+    "viewing_angle": "front left three-quarter",
+    "camera_height": "eye level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor with full trailer visible",
+    "truck_orientation": "cab front left, trailer extending rear right",
+    "important_crop_information": "bottom left of bumper slightly cropped; trailer is visible in full length on right, but trailer wheels partly cut at rear"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 65,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": false,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "KOOPS",
+      "position": "roof sign, centered, horizontal",
+      "appearance": "white capital letters on black background"
+    },
+    {
+      "text": "WOLTER KOOPS",
+      "position": "upper left cab door, horizontal",
+      "appearance": "black capital letters"
+    },
+    {
+      "text": "WOLTER KOOPS",
+      "position": "trailer side, large scale, horizontal",
+      "appearance": "blue capital letters"
+    },
+    {
+      "text": "KOOPS",
+      "position": "trailer side under globe illustration",
+      "appearance": "black capital letters"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Doofe",
+      "position": "lower left windshield, script style, white",
+      "print_importance": "optional"
+    },
+    {
+      "text_or_element": "1961",
+      "position": "right of grille (viewer's left), badge",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "cab roof, evenly spaced, above windshield",
+        "arrangement": "horizontal row",
+        "outer_shape": "round"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 6,
+        "position": "integrated in grille, three per row, two rows",
+        "arrangement": "horizontal pairs in grille center",
+        "outer_shape": "rectangular/rounded"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "lower left and right corners of grille area",
+      "outer_shape": "rectangular with angled outer edge"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "Doofe sticker/script",
+      "round sticker (details unclear)"
+    ],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "Gloss black and silver horizontal bars with mesh pattern",
+    "headlight_description": "Large, two-part rectangular units with integrated DRL strips and separate indicator chambers",
+    "bumper_description": "Three-section, integrates headlight housing, lower ventilation openings, silver element across base"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

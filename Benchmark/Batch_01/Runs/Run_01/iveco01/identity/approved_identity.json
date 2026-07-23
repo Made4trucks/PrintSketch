@@ -1,0 +1,100 @@
+{
+  "vehicle": {
+    "brand": "IVECO",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "",
+    "viewing_angle": "full front",
+    "camera_height": "eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "centered, head-on to camera",
+    "important_crop_information": "minor crop of outermost left and right mirrors; otherwise fully framed vertically"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 80,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": false,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "",
+      "position": "",
+      "appearance": ""
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "IVECO",
+      "position": "front bumper, left (from viewer perspective)",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "IVECO",
+      "position": "front bumper, right (from viewer perspective)",
+      "print_importance": "critical"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "on top of cab roof, arranged in a horizontal row",
+        "arrangement": "horizontal row",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "lower left and right of main grille",
+      "outer_shape": "angular/slanted"
+    }
+  },
+  "windows": {
+    "windshield_contents": [],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "Five prominent horizontal bars with bold angular red and gold framing",
+    "headlight_description": "Angular, slanted headlight units integrated into lower left and right fascia",
+    "bumper_description": "Swept, color-matched bumper with pronounced design, two white IVECO logos mounted on left and right"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

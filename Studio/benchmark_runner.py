@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
+import re
 
 from project import PrintSketchProject
 from production_pipeline import ProductionPipeline
@@ -12,6 +13,8 @@ SUPPORTED_IMAGE_EXTENSIONS = {
     ".png",
     ".webp",
 }
+
+RUN_NAME_PATTERN = re.compile(r"^Run_(\d+)$")
 
 
 @dataclass
@@ -30,7 +33,7 @@ class BenchmarkResult:
 
 class BenchmarkRunner:
 
-    def __init__(self, run_name: str = "v2") -> None:
+    def __init__(self, run_name: str | None = None) -> None:
 
         self.batch_folder = (
             Path(__file__).resolve().parent.parent
@@ -43,23 +46,64 @@ class BenchmarkRunner:
             / "Originals"
         )
 
-        self.run_folder = (
+        self.runs_folder = (
             self.batch_folder
             / "Runs"
+        )
+
+        if run_name is None:
+            run_name = self.get_next_run_name()
+
+        self.run_folder = (
+            self.runs_folder
             / run_name
         )
+
+    def get_next_run_name(self) -> str:
+
+        self.runs_folder.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        existing_run_numbers = []
+
+        for folder in self.runs_folder.iterdir():
+
+            if not folder.is_dir():
+                continue
+
+            match = RUN_NAME_PATTERN.fullmatch(
+                folder.name
+            )
+
+            if match:
+
+                existing_run_numbers.append(
+                    int(match.group(1))
+                )
+
+        next_run_number = (
+            max(existing_run_numbers, default=0)
+            + 1
+        )
+
+        return f"Run_{next_run_number:02d}"
 
     def get_projects(self) -> list[BenchmarkCase]:
 
         projects = []
 
         if not self.originals_folder.exists():
+
             raise FileNotFoundError(
                 f"Originals folder does not exist: "
                 f"{self.originals_folder}"
             )
 
-        for image_path in sorted(self.originals_folder.iterdir()):
+        for image_path in sorted(
+            self.originals_folder.iterdir()
+        ):
 
             if (
                 image_path.is_file()
@@ -79,6 +123,7 @@ class BenchmarkRunner:
                 )
 
         if not projects:
+
             raise RuntimeError(
                 f"No benchmark images found in: "
                 f"{self.originals_folder}"
@@ -91,16 +136,23 @@ class BenchmarkRunner:
         projects: list[BenchmarkCase],
     ) -> None:
 
+        if self.run_folder.exists():
+
+            raise FileExistsError(
+                f"Run folder already exists: "
+                f"{self.run_folder}"
+            )
+
         self.run_folder.mkdir(
             parents=True,
-            exist_ok=True,
+            exist_ok=False,
         )
 
         for project in projects:
 
             project.output_folder.mkdir(
                 parents=True,
-                exist_ok=True,
+                exist_ok=False,
             )
 
     def run_case(
@@ -253,6 +305,4 @@ class BenchmarkRunner:
 
 if __name__ == "__main__":
 
-    BenchmarkRunner(
-    run_name=datetime.now().strftime("%Y%m%d_%H%M%S")
-).run()
+    BenchmarkRunner().run()

@@ -1,0 +1,108 @@
+{
+  "vehicle": {
+    "brand": "VOLVO",
+    "model_designation": "FH16",
+    "model_designation_position": "front left and right of the grille (viewer’s perspective: both sides of grille)",
+    "cab_type": "high-roof sleeper cab",
+    "viewing_angle": "frontal, slightly to the left",
+    "camera_height": "eye-level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing toward camera, slightly angled left",
+    "important_crop_information": "lower portion of wheels and small part of left cab mirror partially cut by crop; top roof margin and right lower fuel tank also cropped"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 75,
+    "cab_fully_visible": false,
+    "front_fully_visible": true,
+    "roof_fully_visible": false,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": true,
+    "company_text_readable": true,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "good",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "medium",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [
+    {
+      "text": "JAN RIETVELD TRANSPORT & Zn",
+      "position": "upper front sign board above windshield",
+      "appearance": "block letters, horizontal, gold on blue background"
+    },
+    {
+      "text": "JAN RIETVELD TRANSPORT TEL. 0348-471581 SCHOONHOVEN",
+      "position": "front passenger side, below window, above wheel arch",
+      "appearance": "block letters, blue on light blue background, vertical stack"
+    }
+  ],
+  "owner_signatures": [
+    {
+      "text_or_element": "Dare to dream big",
+      "position": "just above windshield, center",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "Lynn",
+      "position": "center lower area of windshield",
+      "print_importance": "optional"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 6,
+        "position": "roof, above windshield, horizontal row",
+        "arrangement": "horizontal row; 4 orange dome lights centrally, 2 blue lights at outer ends between conical white horns",
+        "outer_shape": "circular/rectangular for dome, square for blue, conical for horns"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 4,
+        "position": "upper grille, just above main grille slats",
+        "arrangement": "horizontal row, centered",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 5,
+        "position": "lower bumper, horizontal row",
+        "arrangement": "horizontal row, entire width of bumper",
+        "outer_shape": "rectangular"
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "main vertical headlight clusters at far left and right edges of the front",
+      "outer_shape": "trapezoidal/vertical"
+    }
+  },
+  "windows": {
+    "windshield_contents": [
+      "curtains (brown fringe) at top",
+      "Lynn (name) decal at lower center"
+    ],
+    "side_window_contents": [],
+    "curtains_present": true
+  },
+  "front_geometry": {
+    "grille_bar_count": 13,
+    "grille_description": "Horizontal bars in three main sections; top (fine slats), middle (larger), lower (broad)",
+    "headlight_description": "Vertical, complex, with integrated LED-style running lights and main beams",
+    "bumper_description": "Painted with integrated 5 rectangular lights, chrome-look lower edge"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

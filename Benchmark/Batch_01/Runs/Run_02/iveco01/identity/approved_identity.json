@@ -1,0 +1,104 @@
+{
+  "vehicle": {
+    "brand": "IVECO",
+    "model_designation": "",
+    "model_designation_position": "",
+    "cab_type": "high roof sleeper cab",
+    "viewing_angle": "full front, straight-on",
+    "camera_height": "approximately headlight level"
+  },
+  "composition": {
+    "tractor_only_or_trailer_visible": "tractor only",
+    "truck_orientation": "facing straight toward the viewer",
+    "important_crop_information": "no major front elements are cropped; both sides and roof visible"
+  },
+  "readiness_observations": {
+    "truck_frame_coverage_percent": 90,
+    "cab_fully_visible": true,
+    "front_fully_visible": true,
+    "roof_fully_visible": true,
+    "bumper_fully_visible": true,
+    "left_mirror_visible": true,
+    "right_mirror_visible": true,
+    "grille_clearly_visible": true,
+    "headlights_clearly_visible": true,
+    "brand_text_readable": true,
+    "model_text_readable": false,
+    "company_text_readable": false,
+    "license_plate_readable": true,
+    "perspective_suitability": "excellent",
+    "crop_quality": "excellent",
+    "obstructions_present": false,
+    "obstructions": [],
+    "background_complexity": "low",
+    "identity_visibility": "excellent"
+  },
+  "company_identity": [],
+  "owner_signatures": [
+    {
+      "text_or_element": "IVECO",
+      "position": "center of upper grille, horizontal orientation",
+      "print_importance": "critical"
+    },
+    {
+      "text_or_element": "IVECO",
+      "position": "left bumper flap, horizontal orientation",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "IVECO",
+      "position": "right bumper flap, horizontal orientation",
+      "print_importance": "important"
+    },
+    {
+      "text_or_element": "BD-968-G",
+      "position": "center bumper, license plate, horizontal orientation",
+      "print_importance": "important"
+    }
+  ],
+  "lighting_map": {
+    "roof_lights": [
+      {
+        "count": 7,
+        "position": "across roof front edge",
+        "arrangement": "horizontal row",
+        "outer_shape": "oval"
+      }
+    ],
+    "grille_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "bumper_lights": [
+      {
+        "count": 0,
+        "position": "",
+        "arrangement": "",
+        "outer_shape": ""
+      }
+    ],
+    "main_headlights": {
+      "count": 2,
+      "position": "far left and far right lower front fascia",
+      "outer_shape": "complex polygon, horizontally elongated"
+    }
+  },
+  "windows": {
+    "windshield_contents": [],
+    "side_window_contents": [],
+    "curtains_present": false
+  },
+  "front_geometry": {
+    "grille_bar_count": 5,
+    "grille_description": "five large horizontal chevron-pattern bars in grille with gold accents, following angular contours",
+    "headlight_description": "each headlight unit contains multiple sections; shape matches the lower body contours, angled sharply upward at outer ends",
+    "bumper_description": "red bumper with two white 'IVECO' logos on left and right flaps, yellow license plate in center"
+  },
+  "do_not_move": [],
+  "do_not_invent": [],
+  "uncertain_items": []
+}

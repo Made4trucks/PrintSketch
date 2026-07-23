@@ -1,67 +1,111 @@
-NEGATIVE PROMPT
+# Negative Prompt
 
-Do not change the truck brand.
+The artwork must not introduce information that does not exist in the reference photo.
 
-Do not change the truck model.
+Whenever uncertain,
 
-Do not change the body proportions.
+omit the detail instead of inventing it.
 
-Do not invent accessories.
+---
 
-Do not remove owner-installed accessories unless they are completely invisible.
+## Identity
 
-Do not add company logos, stickers or decorative graphics.
+Never:
 
-Do not invent text.
+- change the truck manufacturer
+- change the truck model
+- change the cabin proportions
+- change the characteristic grille
+- change the characteristic headlights
+- invent accessories
+- invent owner modifications
+- invent company names
+- invent logos
+- invent decorative graphics
+- invent text
+- replace readable text with different text
 
-Do not replace readable text with different text.
+---
 
-Do not add background elements.
+## Composition
 
-No road.
+Never add:
 
-No buildings.
+- roads
+- buildings
+- trees
+- sky
+- people
+- animals
+- trailers (unless intentionally included)
+- background objects
 
-No trees.
+The truck must remain the only subject.
 
-No sky.
+---
 
-No people.
+## Visual Style
 
-No animals.
+Do not generate:
 
-No reflections.
+- gradients
+- shadows
+- grayscale
+- textures
+- reflections
+- weather effects
+- smoke
+- dirt
+- photorealism
+- sketch effects
+- cartoon effects
+- painterly effects
 
-No dirt.
+Use only clean black and white geometry.
 
-No smoke.
+---
 
-No weather effects.
+## Manufacturing
 
-No textures.
+Do not create:
 
-No gradients.
+- floating elements
+- isolated islands
+- fragile geometry
+- microscopic details
+- decorative noise
+- unnecessary complexity
 
-No shadows.
+Avoid geometry that would reduce print quality.
 
-No grayscale.
+---
 
-No photorealism.
+## Shape
 
-No sketch effect.
+Never:
 
-No cartoon style.
+- crop important truck parts
+- distort proportions
+- over-simplify the truck into a silhouette
+- merge independent identity elements
+- remove recognizable owner features without reason
 
-No random decorative patterns.
+---
 
-Do not create floating elements.
+## Black Areas
 
-Do not create fragile printable details.
+Avoid:
 
-Do not create large solid black masses.
+- oversized solid black masses
+- completely filled windshields
+- unnecessary heavy areas that destroy visual balance
 
-Do not turn the windshield into a solid black shape.
+Maintain clean negative space throughout the design.
 
-Do not crop important parts of the truck.
+---
 
-Never reduce the truck to a simple silhouette.
+## Final Rule
+
+If a generated detail cannot be verified from the original photo,
+
+do not generate it.
